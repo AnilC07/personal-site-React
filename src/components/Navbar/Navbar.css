@@ -1,0 +1,27 @@
+#nav {
+    background: lightblue;
+}
+
+#nav .nav-items {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 2rem 0;
+
+    list-style: none;
+
+    font-weight: 600;
+    transform: scale(1);
+}
+
+#nav .nav-items .nav-item {
+    color: black;text-decoration: none;
+    transition: color 0.3s ease, text 0.4s ease;
+}
+
+#nav .nav-items .nav-item:hover {
+    color: #fff;
+}

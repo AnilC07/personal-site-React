@@ -1,0 +1,31 @@
+#realisations{}
+
+#realisations .projects-container{
+    /* border: 1px solid black; */
+}
+
+#realisations .projects-container .filter{
+display:flex;
+align-items: center;
+}
+
+#realisations .projects-container .filter p{
+    padding: 1rem 0 1rem 2rem;
+}
+
+#realisations .projects-container .filter .filter-btn{
+    width: 83%;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#realisations .projects-container .projects{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 4.5rem;
+
+    padding-top: 30px;
+}

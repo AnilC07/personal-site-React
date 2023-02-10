@@ -1,0 +1,47 @@
+.experience{
+    margin-bottom: 2.63vw;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    gap:1vw;
+    margin-bottom: 1vw;
+}
+
+.informations{
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.52vw;
+    padding-right: 0.52vw;
+    padding-left: 0.52vw;
+    border-left: 2px solid black;
+
+    /*  */
+}
+
+
+.missions{
+    width:90%;
+    margin-left:12rem;
+    padding-left: 2rem;
+
+}
+
+.description{
+    margin-bottom: 0.7vw;
+}
+
+.list{
+    list-style: none;
+
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+    font-size: 1.15vw;
+}

@@ -1,0 +1,22 @@
+.input{
+padding: 10px 0;
+}
+
+.input label{
+    display: inline-block;
+    width: 125px;
+}
+
+.input input{
+    display: inline-block;
+    width: 250px;
+    padding: 0.5rem 0;
+    padding-left: 0.9rem;
+    border-radius: 5px;
+}
+
+.input input:focus{
+
+    /* outline: none;
+    background-color: lightgray; */
+}

@@ -1,0 +1,125 @@
+#contact {}
+
+.contact-btn {
+    margin-top: 1vw;
+
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.contact-btn .mail,
+.contact-btn .commentaire {
+    margin-top: 1vw;
+
+    transform: translateY(0);
+
+    transition: transform .3s;
+}
+
+.contact-btn .mail:hover,
+.contact-btn .commentaire:hover {
+    transform: translateY(-2px);
+}
+
+.contact-btn .mail:active,
+.contact-btn .commentaire:active {
+    transform: translateY(3px);
+}
+
+.contact-item {
+    margin-top: 1vw;
+}
+
+.contact-item svg {
+    font-size: 2rem;
+}
+
+.contact-items a {
+    text-decoration: none;
+}
+
+#commentaires .container {
+    background-color: #476ce4;
+    color: #fff;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 50px 80px;
+    max-width: 768px;
+    position: relative
+}
+
+#commentaires .container .quote {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 2.8rem;
+    position: absolute;
+
+}
+
+#commentaires .container .quote.left {
+    top: 40px;
+    left: 40px;
+}
+
+#commentaires .container .quote.right {
+    top: 195px;
+    right: 40px;
+}
+
+#commentaires .container .message {
+    text-align: justify;
+}
+
+#commentaires .container .visiteur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#commentaires .container .visiteur img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+#commentaires .container .detail-visiteur {
+    margin-left: 10px;
+}
+
+#commentaires .detail-visiteur h4 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+#commentaires .detail-visiteur p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+
+#commentaires .chevron {
+    font-size: 3rem;
+    position: absolute;
+    top: 150px;
+
+    fill: rgba(0, 0, 0, .3);
+    transform: scale(1);
+    transition: fill .3s, transform .3s;
+}
+
+#commentaires .chevron:hover {
+    fill: rgba(0, 0, 0, .9);
+    transform: scale(1.05);
+
+    cursor: pointer;
+}
+
+#commentaires .chevron.left {
+    left: -39px;
+}
+
+#commentaires .chevron.right {
+    right: -39px;
+}

@@ -1,0 +1,21 @@
+.submiBtn{
+    display: flex;
+    justify-content: center;
+}
+
+.submitBtn .button{
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: var(--btn-style);
+    box-shadow: var(--btn-shadow);
+    transition: var(--animation);
+}
+.submitBtn .button:hover{
+    transform: scale(105%);
+}
+.submitBtn .button:active{
+    transform: translateY(2px);
+    text-decoration-line:spelling-error ;
+}

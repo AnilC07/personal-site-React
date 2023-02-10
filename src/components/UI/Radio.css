@@ -1,0 +1,16 @@
+.radio-groups{
+display: flex;
+margin-left: 4rem;
+margin-bottom: 10px;
+}
+
+.radio-group{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 2rem;
+}
+
+.radio-group input[radio]{
+    
+}

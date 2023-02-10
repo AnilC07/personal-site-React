@@ -1,0 +1,45 @@
+#form .valid-form {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+
+    margin-top: 4rem;
+}
+
+#form .decompte {}
+
+#form .text-area {
+    display: inline-block;
+}
+
+#form .icon-utilisateur {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 10px;
+
+    margin-bottom: 1rem;
+}
+
+
+#form .icon-utilisateur .radio-groups {
+    padding: 20px;
+}
+
+.selected {
+    display: block;
+    border-radius: 50%;
+
+    padding: 5px;
+
+    outline: #007FFF 4px solid;
+}
+
+#form .icon-utilisateur label img {
+    display: block;
+}
+
+#form .icon-utilisateur label{
+    display: block;
+    border-radius: 50%;
+}
