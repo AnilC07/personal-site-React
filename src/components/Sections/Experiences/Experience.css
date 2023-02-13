@@ -45,6 +45,7 @@ cursor: pointer;
 #experiences .experience .description {
     text-align: justify;
     margin-bottom: 1.5rem;
+    padding-right: 6rem;
 }
 
 #experiences .experience .list {
@@ -54,8 +55,9 @@ cursor: pointer;
 
 #experiences .experience .list .list-item {
     display: flex;
-    padding-left: 2rem;
     align-items: center;
+
+    padding-right: 6rem;
 }
 
 #experiences .experience .list .list-item .puce {}
