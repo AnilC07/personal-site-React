@@ -12,15 +12,26 @@ const Realisations = () => {
       <SectionHeading>Réalisations</SectionHeading>
       <div className="projects-container">
         <div className="filter">
-          <p>Flitrer par compétences : </p>
+          <label htmlFor="filter">Flitrer par compétences&nbsp;:&nbsp;</label>
           <div className="filter-btn">
+          {/* <select style={{display:'hidden'}}> */}
             {competences.map((el) => {
               const { id, competence } = el;
               return (
-                  <FilterButton key={id} competence={competence} />
+                  <FilterButton key={id} id="filter" competence={competence} />
               );
             })}
           </div>
+          <div className="custom-select">
+          <select>
+            {competences.map((el) => {
+              const { id, competence } = el;
+              return ( <option key={id} id="filter" value={competence}>{competence}</option>
+              );
+            })}
+            </select>
+          </div>
+         
         </div>
         <div className="projects">
           {projets.map((projet) => {

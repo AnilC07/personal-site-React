@@ -88,7 +88,7 @@ export const experiences = [
     logo: "/images/gaea21.png",
     debut: "2022",
     end: "",
-    presentation: "",
+    presentation: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     tasks: [
       "Responsable de l'intégrations des pages statiques suivantes : Toutes les pages de la section 'Projets', toutes les pages liéà la section 'Organigramme', 'Historique' et 'Alumni'",
       "Responsable du développement des composants React",
@@ -102,7 +102,7 @@ export const experiences = [
     logo: "/images/laPasserelle.jpg",
     debut: "2022",
     end: "",
-    presentation: "",
+    presentation: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     tasks: [
       "Lead dev dans la réalisation d’une app web en collaboration avec des UX/UI Designers",
       "Réalisation d'un quizz en React afin de connaitre les preferences du visiteur et l'orienté dans son choix vers la destination qui lui correspondrait le mieux",
@@ -117,7 +117,7 @@ export const experiences = [
     debut: "2020",
     end: "2021",
     presentation:
-      "Succession de contrats d'intérim pour réaliser la maintenance des équipements de la Cité des Sciences à Paris",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     tasks: [
       "Realisations de la maintenances preventives et curatives des appareils audiovisuels de la Cité des Sciences ",
       "Prises en charges des tickets d'interventions",
@@ -130,7 +130,7 @@ export const experiences = [
     logo: "/images/safran.jpg",
     debut: "2018",
     end: "2020",
-    presentation: "",
+    presentation: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     tasks: [
       "Receptionner les équipements à l'atelier",
       "Faire le 'burn' des equipements",
@@ -149,7 +149,7 @@ export const experiences = [
     logo: "/images/microfactory.png",
     debut: "2015",
     end: "2016",
-    presentation: "",
+    presentation: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     tasks: ["coucou"],
   },
 ];

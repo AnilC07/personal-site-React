@@ -1,35 +1,77 @@
-#realisations{}
+#realisations {}
 
-#realisations .projects-container{
+#realisations .projects-container {
     /* border: 1px solid black; */
 }
 
-#realisations .projects-container .filter{
-display:flex;
-align-items: center;
-gap: 1rem;
+#realisations .projects-container .filter {
+    display: flex;
+    align-items: center;
+    /* gap: 1rem; */
 }
 
-#realisations .projects-container .filter p{
-
+#realisations .projects-container .filter .custom-select {
+    display: none;
 }
 
-#realisations .projects-container .filter .filter-btn{
- 
+#realisations .projects-container .filter label {}
+
+#realisations .projects-container .filter .filter-btn {
 
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     flex-wrap: wrap;
-    flex: auto;
+    gap: 3rem;
 }
 
-#realisations .projects-container .projects{
+#realisations .projects-container .filter .filter-btn button {
+    width: 14.5rem;
+}
+
+#realisations .projects-container .projects {
     display: flex;
     /* justify-content: space-between; */
     flex-wrap: wrap;
     gap: 2.5rem;
-
-    padding-top: 30px;
-
-
+    padding-top: 6rem;
 }
+
+@media screen and (max-width:1239px) {
+    #realisations .projects-container .projects {
+        display: flex;
+        justify-content: center;
+    }
+
+    #realisations .projects-container .filter .filter-btn {
+        display: none;
+    }
+
+    #realisations .projects-container .filter .custom-select {
+        display: block;
+    }
+
+    #realisations .projects-container .filter {
+        justify-content: center;
+    }
+}
+
+/* @media screen and (max-width:768px) {
+    #realisations .projects-container .projects {
+        display: flex;
+        justify-content: center;
+    }
+
+    #realisations .projects-container .filter .filter-btn {
+
+        display: none;
+
+    }
+
+    #realisations .projects-container .filter .custom-select {
+        display: block;
+    }
+
+    #realisations .projects-container .filter {
+        justify-content: center;
+    }
+} */

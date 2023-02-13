@@ -2,9 +2,9 @@ import React from "react";
 
 import './FilterButton.css'
 
-const FilterButton = ({ competence }) => {
+const FilterButton = ({ competence, id }) => {
   return (
-      <button>{competence}</button>
+      <button id="filter">{competence}</button>
   );
 };
 
