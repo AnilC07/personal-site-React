@@ -1,13 +1,10 @@
-import React from "react";
-
 import styled from "styled-components";
 
 const SectionHeading = styled.h2`
-  font-size: 3vw;
   text-align: center;
 
   text-transform: uppercase;
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
 
   background-image: linear-gradient(
     98.3deg,

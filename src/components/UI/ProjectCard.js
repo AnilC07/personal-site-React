@@ -8,7 +8,7 @@ const ProjectCard = ({ id, image, titre, desc, lien, tags }) => {
       </div>
       <div className="card-text-content">
         <div className="card-header">
-          <h2>{titre}</h2>
+          <h3>{titre}</h3>
         </div>
         <p>{desc}</p>
 
@@ -24,7 +24,7 @@ const ProjectCard = ({ id, image, titre, desc, lien, tags }) => {
                 );
               })
             ) : (
-              <span> #{tags}</span>
+              <span className="tag"> #{tags}</span>
             )}
           </p>
         </div>

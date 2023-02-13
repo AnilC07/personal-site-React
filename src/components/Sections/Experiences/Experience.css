@@ -1,16 +1,16 @@
-.experience{
+#experiences .experience{
     margin-bottom: 2.63vw;
 }
 
 
-.header{
+#experiences .experience .header{
     display: flex;
     align-items: center;
     gap:1vw;
     margin-bottom: 1vw;
 }
 
-.informations{
+#experiences .experience .informations{
     width:90%;
     display: flex;
     justify-content: space-between;
@@ -24,24 +24,27 @@
 }
 
 
-.missions{
-    width:90%;
+#experiences .experience .missions{
+    /* width:90%; */
     margin-left:12rem;
     padding-left: 2rem;
 
 }
 
-.description{
+#experiences .experience .description{
     margin-bottom: 0.7vw;
 }
 
-.list{
+#experiences .experience .list{
     list-style: none;
 
 }
 
-.list-item{
+#experiences .experience .list .list-item{
     display: flex;
     align-items: center;
-    font-size: 1.15vw;
+}
+
+#experiences .experience .list .list-item .puce{
+
 }

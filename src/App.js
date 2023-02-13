@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      
       <Header />
       <main id="main">
         <About />

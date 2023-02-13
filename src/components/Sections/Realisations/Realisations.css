@@ -7,25 +7,29 @@
 #realisations .projects-container .filter{
 display:flex;
 align-items: center;
+gap: 1rem;
 }
 
 #realisations .projects-container .filter p{
-    padding: 1rem 0 1rem 2rem;
+
 }
 
 #realisations .projects-container .filter .filter-btn{
-    width: 83%;
+ 
 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex: auto;
 }
 
 #realisations .projects-container .projects{
     display: flex;
     /* justify-content: space-between; */
     flex-wrap: wrap;
-    gap: 4.5rem;
+    gap: 2.5rem;
 
     padding-top: 30px;
+
+
 }

@@ -20,7 +20,7 @@ const Experiences = () => {
                 <Logo logo={logo} company={company} />
               </div>
               <div className="informations">
-                <h2>{company} - {poste}</h2>
+                <h3>{company} - {poste}</h3>
                 <p>
                   {debut} {end && <span>- {end}</span>}
                 </p>
