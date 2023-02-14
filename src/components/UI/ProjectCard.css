@@ -5,7 +5,7 @@
 
     width: 35rem;
 
-    border-radius: 0.8vw;
+    border-radius: var(--border-radius);
 
     overflow: hidden;
 
@@ -16,12 +16,11 @@
 
     margin-bottom: 2rem;
 
-    box-shadow: -2px 2px 11px -1px rgba(0, 0, 0, 1);
-    -webkit-box-shadow: -2px 2px 11px -1px rgba(0, 0, 0, 1);
-    -moz-box-shadow: -2px 2px 11px -1px rgba(0, 0, 0, 1);
+    box-shadow: var(--btn-shadow);
+    -webkit-box-shadow: var(--btn-shadow);
+    -moz-box-shadow: var(--btn-shadow);
 
     transform: scale(1);
-
     transition: var(--animation);
 }
 
@@ -39,7 +38,7 @@
 
 .card .card-text-content {
     font-weight: 600;
-    margin-bottom: 2vw;
+    margin-bottom: 2.5rem;
 }
 
 .card .card-text-content h3 {
@@ -49,7 +48,7 @@
 }
 
 .card .card-text-content p {
-    padding: 0.52vw 0.8vw 0;
+    padding: 1rem 2rem 0;
     color: #777;
     font-size: 1.3rem;
     text-align: justify;
@@ -58,7 +57,7 @@
 .card .card-text-content .tags {
     display: flex;
     gap: 1rem;
-    padding: 0.52vw 0.1vw 0;
+    padding: 1rem 0.2rem 0;
     padding-top: 2rem;
     font-size: 1.3rem;
 }
@@ -73,17 +72,18 @@
     background-color: transparent;
     /* font-size: 0.8vw; */
     font-weight: 600;
-    border: 1px solid;
+    border: 1px solid #777;
 
-    padding: 0.8vw 1vw;
-    border-radius: 0.52vw;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
 
-    color: orange;
+    color: #777;
 
-    transition: background-color 0.3s ease;
+    transition: var(--animation)
 }
 
 .card .link:hover {
-    background-color: orange;
+    background-color: var(--clr-grey);
     color: white;
 }

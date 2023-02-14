@@ -4,6 +4,11 @@
     /* border: 1px solid black; */
 }
 
+#realisations .projects-container .projects {
+    display:flex;
+    justify-content: center;
+}
+
 #realisations .projects-container .filter {
     display: flex;
     align-items: center;
@@ -19,13 +24,17 @@
 #realisations .projects-container .filter .filter-btn {
 
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 3rem;
 }
 
 #realisations .projects-container .filter .filter-btn button {
     width: 14.5rem;
+    box-shadow: var(--btn-shadow);
+}
+#realisations .projects-container .filter .filter-btn button:hover {
+    border: none;
 }
 
 #realisations .projects-container .projects {

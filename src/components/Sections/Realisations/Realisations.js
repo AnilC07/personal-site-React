@@ -12,7 +12,7 @@ const Realisations = () => {
       <SectionHeading>Réalisations</SectionHeading>
       <div className="projects-container">
         <div className="filter">
-          <label htmlFor="filter">Flitrer par compétences&nbsp;:&nbsp;</label>
+          {/* <label htmlFor="filter">Flitrer par compétences&nbsp;:&nbsp;</label> */}
           <div className="filter-btn">
           {/* <select style={{display:'hidden'}}> */}
             {competences.map((el) => {
@@ -23,6 +23,7 @@ const Realisations = () => {
             })}
           </div>
           <div className="custom-select">
+          <label htmlFor="filter">Flitrer par compétences&nbsp;:&nbsp;</label>
           <select>
             {competences.map((el) => {
               const { id, competence } = el;

@@ -85,7 +85,7 @@ const Contact = () => {
           <Btn
             classname={"mail"}
             title={"Envoyer un mail"}
-            bgColor={"#ccc"}
+            bgColor={"#965"}
             textColor={"white"}
             onClickHandler={sendMail}
           />

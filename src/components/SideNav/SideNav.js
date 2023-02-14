@@ -7,7 +7,7 @@ const SideNav = ({children, onClick}) => {
   // const [isOpen, setIsOpen] = useState(false);
 
   const content = (<CSSTransition in={"show"} 
-    timeout={5000} 
+    timeout={1000} 
     classNames="slide-in-left" 
     mountOnEnter unmountOnExit>
     <aside 

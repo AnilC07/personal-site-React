@@ -80,7 +80,7 @@ export const projets = [
   },
 ];
 
-export const experiences = [
+export const jobs = [
   {
     id: 1,
     company: "gaea21",

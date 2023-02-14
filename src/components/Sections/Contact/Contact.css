@@ -1,20 +1,30 @@
 #contact {}
 
 .contact-btn {
-    margin-top: 1vw;
+    margin-top: 2rem;
 
     display: flex;
     justify-content: center;
-    gap: 3vw;
+    gap: 5.7rem;
 }
 
 .contact-btn .button.mail,
 .contact-btn .button.commentaire {
-    margin-top: 1vw;
-
+    margin-top: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: var(--border-radius);
+    /* border: 1px solid black; */
+    box-shadow: var(--btn-shadow);
+    background: transparent;
+    cursor: pointer;
     transform: translateY(0);
 
-    transition: transform .1s;
+    transition: var(--animation);
+}
+
+.contact-btn .button.mail:hover,
+.contact-btn .button.commentaire:hover{
+    transform:scale(1.05);
 }
 
 /* .contact-btn .mail:hover,
@@ -28,7 +38,7 @@
 }
 
 .contact-item {
-    margin-top: 1vw;
+    margin-top: 2rem;
 }
 
 .contact-item svg {
@@ -40,7 +50,7 @@
 }
 
 #commentaires .container {
-    background-color: #476ce4;
+    background-color: #777;
     color: #fff;
     border-radius: 1.5rem;
     margin: 2rem auto;
@@ -50,7 +60,7 @@
 }
 
 #commentaires .container .quote {
-    color: rgba(255, 255, 255, 0.3);
+    fill: white;
     font-size: 2.8rem;
     position: absolute;
 
@@ -103,7 +113,7 @@
 #commentaires .chevron {
     font-size: 3rem;
     position: absolute;
-    top: 13.3rem;
+    top: 15rem;
 
     fill: rgba(0, 0, 0, .3);
     transform: scale(1);
