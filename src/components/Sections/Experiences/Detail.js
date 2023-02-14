@@ -7,7 +7,7 @@ const Detail = ({ tasks, presentation }) => {
   return (
     <>
       <div className="show" onClick={() => setShow(!show)}>
-        {show ? <p>moins de details</p>: <p>plus de details</p> }
+        {show ? <p>Moins de details</p>: <p>Plus de details</p> }
       </div>
       {show && (
         <div className="missions">
