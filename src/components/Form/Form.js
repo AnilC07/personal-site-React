@@ -92,8 +92,8 @@ const Form = ({ closeModal }) => {
           placeholder="Veuillez entrer votre email"
           name="email"
         />
-        <div style={{ display: "flex" }}>
-          <label>Recruteur ?</label>
+        <div  style={{ display: "flex" }}>
+          <label className='isPro'>Recruteur ?</label>
           <Radio
             label="oui"
             value="oui"
