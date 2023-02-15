@@ -2,7 +2,6 @@ import "./App.css";
 import Divider from "./components/Divider";
 
 import Header from "./components/Header/Header";
-import Navbar from "./components/Navbar/Navbar";
 import About from "./components/Sections/About/About";
 import Realisations from "./components/Sections/Realisations/Realisations";
 import Experiences from "./components/Sections/Experiences/Experiences";
