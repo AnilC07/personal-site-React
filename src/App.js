@@ -26,8 +26,6 @@ function App() {
           <Contact />
         </UserService>
       </main>
-
-      <footer id="footer"></footer>
     </>
   );
 }
