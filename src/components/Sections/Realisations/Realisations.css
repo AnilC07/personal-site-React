@@ -54,7 +54,9 @@
     }
 
     #realisations .projects-container .filter .custom-select {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #realisations .projects-container .filter {
