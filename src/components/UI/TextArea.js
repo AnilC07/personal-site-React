@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./TextArea.css";
 
 const TextArea = ({ id, label, placeholder, name }) => {
-  const [numChars, setNumChars] = useState(260);
+  const [numChars, setNumChars] = useState(400);
 
   const limitNumOfChars = () => {
     setNumChars((numChars) => numChars - 1);
@@ -26,7 +26,7 @@ const TextArea = ({ id, label, placeholder, name }) => {
           cols=""
           name={name}
           onChange={limitNumOfChars}
-          maxLength="260"
+          maxLength="400"
         />
         <p className="decompte">il vous reste {numChars} caracteres</p>
       </div>
