@@ -8,6 +8,7 @@
     padding: 20rem 0;
     position: relative;
     color: #fefefefe;
+    text-align: center;
 }
 
 
@@ -17,7 +18,8 @@
 }
 
 .header-container h1 {
-
+display: inline-block;
+text-align: center;
     transform: skew(-20deg);
     text-align: center;
 }
@@ -25,6 +27,8 @@
 
 .header-container h2 {
     text-align: center;
+display: block;
+
 }
 
 .background-img {}
