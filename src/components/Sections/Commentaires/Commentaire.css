@@ -25,28 +25,3 @@
     padding-top: 10px;
 }
 
-.commentaire-header,
-.commentaire .note,
-.commentaire .like,
-.commentaire .dislike {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.commentaire .note{
-    position: relative;
-    bottom: 14px;
-    width: 80px;
-}
-
-.commentaire .like,
-.commentaire .dislike{
-    width: 30px;
-}
-
-.commentaire .note svg{
-    width: 20px;
-    font-size: 1.50vw;
-    cursor:pointer;
-}
