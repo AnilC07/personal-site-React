@@ -1,8 +1,6 @@
 #contact {}
 
 .contact-btn {
-    margin-top: 2rem;
-
     display: flex;
     justify-content: center;
     gap: 5.7rem;
@@ -22,8 +20,8 @@
 }
 
 .contact-btn .button.mail:hover,
-.contact-btn .button.commentaire:hover{
-    transform:scale(1.05);
+.contact-btn .button.commentaire:hover {
+    transform: scale(1.05);
 }
 
 
@@ -32,17 +30,6 @@
     transform: translateY(3px);
 }
 
-.contact-item {
-    margin-top: 2rem;
-}
-
-.contact-item svg {
-    font-size: 2rem;
-}
-
-.contact-items a {
-    text-decoration: none;
-}
 
 #commentaires .container {
     background-color: #777;
@@ -78,7 +65,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1.5rem ;
+    margin-top: 1.5rem;
 }
 
 #commentaires .container .visiteur img {
@@ -128,17 +115,39 @@
 }
 
 @media screen and (max-width:837px) {
+
+    .contact-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .contact-btn .button.mail,
+    .contact-btn .button.commentaire {
+        margin-top: 2rem;
+        padding: 1.5rem 2rem;
+        border-radius: var(--border-radius);
+        box-shadow: var(--btn-shadow);
+        background: transparent;
+        cursor: pointer;
+        transform: translateY(0);
+
+        transition: var(--animation);
+    }
+
+
     #commentaires .container {
         background-color: #777;
         color: #fff;
         border-radius: 0 6rem;
-        padding: 2rem ;
+        padding: 2rem;
         cursor: pointer;
     }
 
     #commentaires .container .visiteur {
-    margin: 1.5rem auto ;
-}
+        margin: 1.5rem auto;
+    }
 
     #commentaires .container .quote {
         display: none;
