@@ -80,3 +80,16 @@ padding-top: 2rem;
 }
 
 #experiences .experience .list .list-item .puce {}
+
+@media screen and (max-width: 768px) {
+    #experiences .experience .missions {
+        margin-left: 2rem;
+}
+#experiences .experience .list .list-item {
+    padding-right: 20px;
+}
+
+#experiences .experience .description {
+    padding-right: 20px;
+}
+}
