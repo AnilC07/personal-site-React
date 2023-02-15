@@ -48,28 +48,12 @@ const Contact = () => {
     setIsOpen(false);
   }
 
-  useEffect(() => {
-    console.log(index);
-  }, [index]);
+  // useEffect(() => {
+  //   console.log(index);
+  // }, [index]);
 
   const sendMail = () => {
     window.location.href = `mailto:${email}`;
-  };
-
-  const nextComment = (e) => {
-    if (index < ctx.commentaires.length - 1) {
-      setIndex((index) => index + 1);
-    } else {
-      setIndex((index) => 0);
-    }
-  };
-
-  const prevComment = (e) => {
-    if (index > 0) {
-      setIndex((index) => index - 1);
-    } else {
-      setIndex(ctx.commentaires.length - 1);
-    }
   };
 
   return (
@@ -113,7 +97,9 @@ const Contact = () => {
 
       {testimonials && (
         <section id="commentaires">
-          <div className="container">
+          <div className="container" onClick={() => {
+              setIndex(index < ctx.commentaires.length - 1 ? index + 1 : 0);
+            }}>
             <ImQuotesLeft className="quote left" />
             <ImQuotesRight className="quote right" />
             <p className="message">{message}</p>
@@ -137,8 +123,12 @@ const Contact = () => {
               </div>
             </div>
 
-            <FaChevronLeft className="chevron left" onClick={prevComment} />
-            <FaChevronRight className="chevron right" onClick={nextComment} />
+            <FaChevronLeft className="chevron left" onClick={() => {
+              setIndex(index > 0 ? index - 1 : ctx.commentaires.length - 1);
+            }} />
+            <FaChevronRight className="chevron right" onClick={() => {
+              setIndex(index < ctx.commentaires.length - 1 ? index + 1 : 0);
+            }} />
           </div>
         </section>
       )}
