@@ -1,11 +1,9 @@
 #realisations {}
 
-#realisations .projects-container {
-    /* border: 1px solid black; */
-}
+#realisations .projects-container {}
 
 #realisations .projects-container .projects {
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
@@ -13,17 +11,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* gap: 1rem; */
 }
 
 #realisations .projects-container .filter .custom-select {
     display: none;
 }
 
-#realisations .projects-container .filter label {}
+
 
 #realisations .projects-container .filter .filter-btn {
-
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -34,6 +30,7 @@
     width: 14.5rem;
     box-shadow: var(--btn-shadow);
 }
+
 #realisations .projects-container .filter .filter-btn button:hover {
     border: none;
 }
