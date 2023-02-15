@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-import { HiBarsArrowDown, HiBarsArrowUp } from "react-icons/hi2";
-
 const Detail = ({ tasks, presentation }) => {
   const [show, setShow] = useState(false);
   return (

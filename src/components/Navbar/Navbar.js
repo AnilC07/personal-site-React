@@ -1,14 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import { GiCrossMark } from "react-icons/gi";
 import { FaHamburger } from "react-icons/fa";
 import {IoMdContact} from "react-icons/io"
 import { HiComputerDesktop } from "react-icons/hi2";
 import {MdOutlineWorkOutline,MdMail} from "react-icons/md"
 
-import { CSSTransition } from "react-transition-group";
-
 import SideNav from "../SideNav/SideNav";
-import NavLinks from "./NavLinks";
 
 import "./Navbar.css";
 import Backdrop from "../Backdrop";
