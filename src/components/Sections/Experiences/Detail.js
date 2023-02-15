@@ -11,8 +11,8 @@ const Detail = ({ tasks, presentation }) => {
         <div className="missions">
           <p className="description">
             <b>Description de l'entreprise&nbsp;:&nbsp;</b>
-            {presentation}
           </p>
+          <p>{presentation}</p>
           <ul className="list">
             <p style={{ padding: "0" }}>
               <b>Missions&nbsp;:&nbsp;</b>

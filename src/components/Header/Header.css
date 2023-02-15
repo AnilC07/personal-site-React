@@ -1,5 +1,5 @@
-#header{
-    background-image: linear-gradient(to bottom, #000000,#00000031);
+#header {
+    background-image: linear-gradient(to bottom, #000000, #00000031);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -18,8 +18,8 @@
 }
 
 .header-container h1 {
-display: inline-block;
-text-align: center;
+    display: inline-block;
+    text-align: center;
     transform: skew(-20deg);
     text-align: center;
 }
@@ -27,7 +27,7 @@ text-align: center;
 
 .header-container h2 {
     text-align: center;
-display: block;
+    display: block;
 
 }
 
