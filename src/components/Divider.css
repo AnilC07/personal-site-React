@@ -6,9 +6,7 @@
 
     background-color: black;
     position: relative;
-    margin:8rem auto;
-
-
+    margin:5rem auto;
 }
 
 .divider::before {
