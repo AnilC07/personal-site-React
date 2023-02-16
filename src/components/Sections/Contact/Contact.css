@@ -1,4 +1,6 @@
-#contact {}
+#contact .msg {
+text-align: justify;
+}
 
 .contact-btn {
     display: flex;
@@ -40,6 +42,10 @@
     max-width: 768px;
     position: relative
 }
+
+#commentaires .container:active{
+
+} 
 
 #commentaires .container .quote {
     fill: white;

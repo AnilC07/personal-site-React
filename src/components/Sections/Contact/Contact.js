@@ -61,7 +61,7 @@ const Contact = () => {
     <>
       <section id="contact">
         <SectionHeading>Contact</SectionHeading>
-        <p>
+        <p className="msg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et nunc
           tempor neque semper vulputate. Vestibulum sed lorem viverra, viverra
           augue quis, porttitor magna.
@@ -98,7 +98,7 @@ const Contact = () => {
 
       {testimonials && (
         <section id="commentaires">
-          <div className="container" onClick={() => {
+          <div className="container" onClick={(e) => {e.preventDefault();
               setIndex(index < ctx.commentaires.length - 1 ? index + 1 : 0);
             }}>
             <ImQuotesLeft className="quote left" />
