@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import Btn from "../UI/Btn";
+
+import BtnModal from "../UI/BtnModal";
 import Input from "../UI/Input";
 import Radio from "../UI/Radio";
 
@@ -27,24 +28,30 @@ const Form = ({ closeModal }) => {
 
   const getGender = (value) => {
     setGender(value);
-    if(value === "homme"){
-      document.querySelector(".icon-utilisateur .manIcon").classList.add('selected')
-
+    if (value === "homme") {
+      document
+        .querySelector(".icon-utilisateur .manIcon")
+        .classList.add("selected");
     }
-    if(value === "femme"){
-      document.querySelector(".icon-utilisateur .femaleIcon").classList.add('selected')
-
+    if (value === "femme") {
+      document
+        .querySelector(".icon-utilisateur .femaleIcon")
+        .classList.add("selected");
     }
   };
 
-  useEffect(()=>{
-    if(gender !== "homme"){
-      document.querySelector(".icon-utilisateur .manIcon").classList.remove('selected')
+  useEffect(() => {
+    if (gender !== "homme") {
+      document
+        .querySelector(".icon-utilisateur .manIcon")
+        .classList.remove("selected");
     }
-    if(gender !== "femme"){
-      document.querySelector(".icon-utilisateur .femaleIcon").classList.remove('selected')
+    if (gender !== "femme") {
+      document
+        .querySelector(".icon-utilisateur .femaleIcon")
+        .classList.remove("selected");
     }
-  },[gender])
+  }, [gender]);
 
   const addComment = (e) => {
     e.preventDefault();
@@ -56,7 +63,7 @@ const Form = ({ closeModal }) => {
 
   return (
     <div id="form">
-      <form onSubmit={addComment}>
+      <form>
         <div className="icon-utilisateur">
           <UserIcon
             id="manIcon"
@@ -92,8 +99,8 @@ const Form = ({ closeModal }) => {
           placeholder="Veuillez entrer votre email"
           name="email"
         />
-        <div  style={{ display: "flex" }}>
-          <label className='isPro'>Recruteur ?</label>
+        <div style={{ display: "flex" }}>
+          <label className="isPro">Recruteur ?</label>
           <Radio
             label="oui"
             value="oui"
@@ -132,10 +139,15 @@ const Form = ({ closeModal }) => {
           name="message"
         />
         <div className="valid-form">
-          <Btn bgColor="green" textColor="white" title="Envoyer" />
-          <Btn
-            // onClickHandler={closeModal}
+          <BtnModal
+            bgColor="green"
+            textColor="white"
+            title="Envoyer"
+            onClick={addComment}
+          />
+          <BtnModal
             bgColor="red"
+            onClickHandler={closeModal}
             textColor="white"
             title="Annuler"
           />
