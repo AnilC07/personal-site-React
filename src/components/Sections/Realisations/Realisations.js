@@ -23,7 +23,7 @@ const Realisations = () => {
             })}
           </div>
           <div className="custom-select">
-          <label htmlFor="filter">Flitre&nbsp;:&nbsp;</label>
+          {/* <label htmlFor="filter">Flitre&nbsp;:&nbsp;</label> */}
           <select>
             {competences.map((el) => {
               const { id, competence } = el;

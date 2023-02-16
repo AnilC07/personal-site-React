@@ -36,7 +36,7 @@
 }
 
 #nav .nav-burger-icon {
-    font-size: 5rem;
+    font-size: 4rem;
     position: absolute;
     top: 10px;
     right: 30px;
@@ -65,10 +65,10 @@
 }
 
 #nav__drawer .nav__drawer_cross-icon {
-    font-size: 5rem;
+    font-size: 3rem;
     position: absolute;
     top: 1rem;
-    right: 3rem;
+    right: 1rem;
     cursor: pointer;
 color: #faf9f9;
 
@@ -111,7 +111,7 @@ color: #faf9f9;
     z-index: 299;
     width: 3px;
     height: 100%;
-    background-color: lightgreen;
+    background-color: #007FFF ;
     transform: scaleY(0);
     transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1) .2s, background-color .5s;
 }

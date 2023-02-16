@@ -19,6 +19,14 @@ padding: 1rem 0;
 
 .input input:focus{
 
-    /* outline: none;
-    background-color: lightgray; */
+    outline: none;
+    /* background-color: lightgray; */
+}
+
+@media screen and (max-width:768px){
+    .input label{
+        display: inline-block;
+        width: 10.5rem;
+    }
+    
 }

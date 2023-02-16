@@ -9,6 +9,7 @@ import Form from "../../Form/Form";
 
 import useUser from "../../../hook/useCtx";
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
+
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const customStyles = {
@@ -69,15 +70,15 @@ const Contact = () => {
           <Btn
             classname={"mail"}
             title={"Envoyer un mail"}
-            bgColor={"#965"}
+            bgColor={"#49a6e9"}
             textColor={"white"}
             onClickHandler={sendMail}
-          />
+                      />
           <Btn
             classname={"commentaire"}
             title={"Laisser un commentaire"}
-            bgColor={"#eee"}
-            textColor={"black"}
+            bgColor={"#e66b6b"}
+            textColor={"white"}
             onClickHandler={openModal}
           />
         </div>
@@ -90,7 +91,7 @@ const Contact = () => {
             contentLabel="Example Modal"
           >
             <SectionHeading>Commentaire</SectionHeading>
-            <Form />
+            <Form closeModal={closeModal}/>
           </Modal>
         </div>
       </section>

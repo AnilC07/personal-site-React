@@ -18,6 +18,13 @@
 
 }
 
+@media screen and (min-width: 365px) and (max-width:768px){
+    #experiences .experience .experience__header-container .show {
+        margin-top: 1rem;
+    
+    }
+}
+
 #experiences .experience .experience__header-container .show:hover {
     animation: clickMe .3s infinite;
 
