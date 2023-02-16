@@ -18,7 +18,7 @@ const Btn = ({ title, bgColor, textColor,classname, onClickHandler, icon }) => {
   return (
     <button className={`button ${classname}`} style={styles} onClick={onClickHandler}>
       {title}
-      {title.includes('mail') ? <BiMailSend />:<BiCommentAdd /> }
+      {title.includes('mail') ? <BiMailSend className="icon"/>:<BiCommentAdd className="icon"/> }
     </button>
   );
 };

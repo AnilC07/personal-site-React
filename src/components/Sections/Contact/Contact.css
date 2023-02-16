@@ -1,5 +1,5 @@
 #contact .msg {
-text-align: justify;
+    text-align: justify;
 }
 
 .contact-btn {
@@ -43,9 +43,7 @@ text-align: justify;
     position: relative
 }
 
-#commentaires .container:active{
-
-} 
+#commentaires .container:active {}
 
 #commentaires .container .quote {
     fill: white;
@@ -135,11 +133,17 @@ text-align: justify;
         padding: 1.5rem 2rem;
         border-radius: var(--border-radius);
         box-shadow: var(--btn-shadow);
+        border: none;
         background: transparent;
         cursor: pointer;
         transform: translateY(0);
 
         transition: var(--animation);
+    }
+
+    .contact-btn .button.mail svg,
+    .contact-btn .button.commentaire .icon {
+        fill: yellow;
     }
 
 
@@ -164,7 +168,7 @@ text-align: justify;
     #commentaires .detail-visiteur h4 {
         font-size: 1.2rem;
     }
-    
+
     #commentaires .detail-visiteur p {
         font-size: 1rem;
         margin: 0;
