@@ -1,7 +1,7 @@
 .radio-groups{
 display: flex;
 margin-left: 4rem;
-margin-bottom: 10px;
+margin-bottom: 1rem;
 }
 
 .radio-group{
@@ -13,4 +13,8 @@ margin-bottom: 10px;
 
 .radio-group input[radio]{
     
+}
+
+@media screen and (max-width:768px){
+
 }
