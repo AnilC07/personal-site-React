@@ -5,9 +5,14 @@
     background-size: cover;
 }
 
+body{
+    background: #eee;
+}
+
 #main {
     width: 80%;
     margin: 0 auto;
+
 }
 
 #about {

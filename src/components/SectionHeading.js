@@ -9,7 +9,7 @@ const SectionHeading = styled.h2`
   background-image: linear-gradient(
     98.3deg,
     rgb(0, 0, 0) 10.6%,
-    rgb(255, 0, 0) 97.7%
+    #007FFF 97.7%
   );
   -webkit-background-clip: text;
   color: transparent;

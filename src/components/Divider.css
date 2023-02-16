@@ -16,8 +16,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgba(0, 0, 0, 1) 100%);
+    background: #eee;
+    background: linear-gradient(90deg, #eee 20%, rgba(0, 0, 0, 1) 100%);
     border: none;
 
 }
@@ -32,5 +32,5 @@
     background: rgb(0, 0, 0);
    
     border: none;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 80%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, #eee 80%);
 }

@@ -5,7 +5,7 @@
   --clr-primary-3: hsl(205, 72%, 37%);
   --clr-primary-4: hsl(205, 63%, 48%);
   /* primary/main color */
-  --clr-primary-5: hsl(205, 78%, 60%);
+  --clr-primary-5: #49a6e9;
   /* lighter shades of primary color */
   --clr-primary-6: hsl(205, 89%, 70%);
   --clr-primary-7: hsl(205, 90%, 76%);
@@ -30,7 +30,7 @@
   --clr-red-special: #b4345c;
   --clr-grey-special: #eae6eb;
   --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-red-light: #e66b6b;
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
@@ -158,4 +158,9 @@ body {
   transform: translateX(-100%);
   opacity: 0;
   transition: all 200ms;
+}
+
+
+.ReactModal__Content .ReactModal__Content--after-open{
+width: 100% !important;
 }
