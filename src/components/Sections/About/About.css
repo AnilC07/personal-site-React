@@ -41,7 +41,7 @@
 #about .presentation-container .presentation-text{
     width: 81%;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:991px) {
     #about .presentation-container .presentation-text{
         width: 100%;
     }

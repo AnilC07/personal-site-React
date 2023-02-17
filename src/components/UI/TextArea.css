@@ -21,14 +21,23 @@
     text-align: end;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:991px){
+    .message {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
     .message label {
         display: inline-block;
-        width: 10.5rem;
+       width:auto;
+        padding-bottom: 1rem;
     }
     .message textarea {
         display: inline-block;
-        width: 40rem;
+        /* max-width: 40rem;
+        min-width: 30rem; */
         padding: 0.5rem 0;
         padding-left: 0.9rem;
     }

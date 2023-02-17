@@ -48,8 +48,23 @@
     width: 20.5rem;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:991px){
     #form .isPro{
         width: 10.5rem;
     }
+
+    #form .icon-utilisateur label img {
+    width: 10rem;
+}
+
+#form .icon-utilisateur {
+    display: flex;
+    justify-content: center;
+    gap:0;
+    padding: 10px;
+
+    margin-bottom: 1rem;
+}
+
+
 }
