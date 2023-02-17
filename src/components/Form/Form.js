@@ -9,10 +9,10 @@ import UserIcon from "../UI/UserIcon";
 // import SubmitBtn from "../UI/SubmitBtn";
 
 import "./Form.css";
-// import useCtx from "../../hook/useCtx";
+import useCtx from "../../hook/useCtx";
 
 const Form = ({ closeModal }) => {
-  // const context = useCtx();
+  const context = useCtx();
   const [isPro, setIsPro] = useState(false);
   const [gender, setGender] = useState("");
 
@@ -45,6 +45,9 @@ const Form = ({ closeModal }) => {
       document
         .querySelector(".icon-utilisateur .manIcon")
         .classList.remove("selected");
+
+
+        // console.log(context.setFormulaire)
     }
     if (gender !== "femme") {
       document

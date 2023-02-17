@@ -1,31 +1,28 @@
 export const competences = [
   {
     id: 1,
-    competence: "Tout voir",
+    competence: "Tous les projets",
   },
   {
     id: 2,
-    competence: "HTML / CSS",
-  },
-  {
-    id: 3,
     competence: "Bootstrap",
   },
   {
+    id: 3,
+    competence: "NodeJS",
+  },
+
+  {
     id: 4,
-    competence: "JavaScript",
+    competence: "ReactJS",
   },
   {
     id: 5,
-    competence: "ReactJS",
+    competence: "NextJS",
   },
   {
     id: 6,
     competence: "TypeScript",
-  },
-  {
-    id: 7,
-    competence: "NextJS",
   },
 ];
 
@@ -36,7 +33,7 @@ export const projets = [
     titre: "Lorem Ipsum 1",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     lien: "www.lorem.com",
-    tags: ["HTML", "CSS", "JS"],
+    tags: ["ReactJS", "NodeJS"],
   },
   {
     id: 2,
@@ -52,7 +49,7 @@ export const projets = [
     titre: "Lorem Ipsum 3",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     lien: "www.lorem.com",
-    tags: ["ReactJS", "Node.js"],
+    tags: ["ReactJS", "NodeJS"],
   },
   {
     id: 4,
@@ -68,7 +65,7 @@ export const projets = [
     titre: "Lorem Ipsum 5",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     lien: "www.lorem.com",
-    tags: ["HTML", "CSS", "Sass"],
+    tags: ["HTML/CSS", "Sass"],
   },
   {
     id: 6,
@@ -76,7 +73,7 @@ export const projets = [
     titre: "Lorem Ipsum 6",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     lien: "www.lorem.com",
-    tags: ["HTML", "CSS", "JS"],
+    tags: ["TypeScript", "ReactJS"],
   },
 ];
 
@@ -88,7 +85,8 @@ export const jobs = [
     logo: "/images/gaea21.png",
     debut: "2022",
     end: "",
-    presentation: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    presentation:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     tasks: [
       "Responsable de l'intégrations des pages statiques suivantes : Toutes les pages de la section 'Projets', toutes les pages liéà la section 'Organigramme', 'Historique' et 'Alumni'",
       "Responsable du développement des composants React",
@@ -102,20 +100,21 @@ export const jobs = [
     logo: "/images/laPasserelle.jpg",
     debut: "2022",
     end: "",
-    presentation: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    presentation:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     tasks: [
       "Lead dev dans la réalisation d’une app web en collaboration avec des UX/UI Designers",
       "Réalisation d'un quizz en React afin de connaitre les preferences du visiteur et l'orienté dans son choix vers la destination qui lui correspondrait le mieux",
       "Pratique intensive de BootStrap, Javascript (librairie React pour le front et Nodejs avec le framework express pour le back)",
     ],
-  }
+  },
 ];
 
 export const commentaires = [
   {
     id: 1,
     utilisateur: "David",
-    genre:"homme",
+    genre: "homme",
     email: "david@gmail.com",
     pro: false,
     fonction: "",
@@ -126,7 +125,7 @@ export const commentaires = [
   {
     id: 2,
     utilisateur: "Eleonore",
-    genre:"femme",
+    genre: "femme",
     email: "eleonore@gmail.com",
     pro: true,
     fonction: "talent acquisition",
@@ -137,7 +136,7 @@ export const commentaires = [
   {
     id: 3,
     utilisateur: "Connor",
-    genre:"homme",
+    genre: "homme",
     email: "connor@gmail.com",
     pro: false,
     fonction: "",
@@ -148,7 +147,7 @@ export const commentaires = [
   {
     id: 4,
     utilisateur: "Damien",
-    genre:"homme",
+    genre: "homme",
     email: "connor@gmail.com",
     pro: false,
     fonction: "",

@@ -49,10 +49,6 @@ const Contact = () => {
     setIsOpen(false);
   }
 
-  // useEffect(() => {
-  //   console.log(index);
-  // }, [index]);
-
   const sendMail = () => {
     window.location.href = `mailto:${email}`;
   };

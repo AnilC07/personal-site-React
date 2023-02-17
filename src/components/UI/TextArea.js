@@ -22,7 +22,7 @@ const TextArea = ({ id, label, placeholder, name }) => {
         <textarea
           id={id}
           placeholder={placeholder}
-          rows="5"
+          rows="4"
           cols=""
           name={name}
           onChange={limitNumOfChars}
