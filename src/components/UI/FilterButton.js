@@ -1,10 +1,14 @@
 import React from "react";
 
+
 import './FilterButton.css'
 
-const FilterButton = ({ competence, id }) => {
+const FilterButton = ({ competence, id, filterOnClick, selected }) => {
   return (
-      <button id="filter">{competence}</button>
+      <button id="filter" 
+      className={selected.join('').includes(competence) && 'active'} 
+      value={competence} 
+      onClick={filterOnClick}>{competence}</button>
   );
 };
 
