@@ -14,7 +14,7 @@ const Detail = ({ tasks, presentation }) => {
           </p>
           <p>{presentation}</p>
           <ul className="list">
-            <p style={{ padding: "0" }}>
+            <p style={{ padding: "1rem 0" }}>
               <b>Missions&nbsp;:&nbsp;</b>
             </p>
             {tasks.map((task, idx) => {

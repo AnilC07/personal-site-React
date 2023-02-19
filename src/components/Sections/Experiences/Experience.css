@@ -69,6 +69,7 @@
 
 #experiences .experience .description {
     text-align: justify;
+    padding-bottom: 1rem;
 }
 
 #experiences .experience .list {
