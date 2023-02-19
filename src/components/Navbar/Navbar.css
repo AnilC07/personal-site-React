@@ -22,6 +22,7 @@
 #nav .nav-items .nav-item {
     color: #fff;
     text-decoration: none;
+    z-index: 12;
     transition: color 0.3s ease, transform 0.2s;
 }
 
@@ -39,8 +40,8 @@
 #nav .nav-burger-icon {
     font-size: 4rem;
     position: absolute;
-    top: 10px;
-    right: 30px;
+    top: 1rem;
+    right: 3rem;
     cursor: pointer;
     z-index: 9;
     display: none;
@@ -66,17 +67,17 @@
 }
 
 #nav__drawer .nav__drawer_cross-icon {
-    font-size: 3rem;
+    font-size: 4rem;
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: 3rem;
     cursor: pointer;
     color: #faf9f9;
 
 }
 
 #nav__drawer .nav__drawer_items {
-    padding-top: 4rem;
+    padding-top: 13rem;
     list-style: none;
 
 }
@@ -95,7 +96,7 @@
     gap: 2rem;
     position: relative;
     z-index: 301;
-    padding-left: 1.5rem;
+    padding-left: 7.5rem;
 }
 
 @media screen and (max-width: 412px) {
@@ -126,8 +127,8 @@
 
 
 #nav__drawer .nav__drawer_item .icon {
-    width: 2.9rem;
-    height: 2.9rem;
+    width: 3.5rem;
+    height: 3.5rem;
     z-index: 300;
     fill: white;
     stroke: white;
