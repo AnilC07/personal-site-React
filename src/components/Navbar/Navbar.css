@@ -20,8 +20,9 @@
 }
 
 #nav .nav-items .nav-item {
-    color: #fff;text-decoration: none;
-    transition: color 0.3s ease, transform 0.2s ;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s;
 }
 
 #nav .nav-items .nav-item:hover {
@@ -30,7 +31,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    #nav .nav-items{
+    #nav .nav-items {
         display: none;
     }
 }
@@ -70,7 +71,7 @@
     top: 1rem;
     right: 1rem;
     cursor: pointer;
-color: #faf9f9;
+    color: #faf9f9;
 
 }
 
@@ -84,7 +85,7 @@ color: #faf9f9;
     font-weight: 500;
     padding: 2rem 0;
     z-index: 300;
-color: #faf9f9;
+    color: #faf9f9;
 }
 
 #nav__drawer .nav__drawer_item {
@@ -98,8 +99,8 @@ color: #faf9f9;
 }
 
 @media screen and (max-width: 412px) {
-        #nav__drawer .nav__drawer_item{
-            padding-right:1.5rem;
+    #nav__drawer .nav__drawer_item {
+        padding-right: 1.5rem;
     }
 }
 
@@ -111,7 +112,7 @@ color: #faf9f9;
     z-index: 299;
     width: 3px;
     height: 100%;
-    background-color: #007FFF ;
+    background-color: #007FFF;
     transform: scaleY(0);
     transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1) .2s, background-color .5s;
 }
@@ -129,5 +130,5 @@ color: #faf9f9;
     height: 2.9rem;
     z-index: 300;
     fill: white;
-    stroke: white; 
+    stroke: white;
 }

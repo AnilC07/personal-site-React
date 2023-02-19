@@ -16,8 +16,9 @@
 }
 
 #nav .nav-items .nav-item {
-    color: #fff;text-decoration: none;
-    transition: color 0.3s ease, transform 0.2s ;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s;
 }
 
 #nav .nav-items .nav-item:hover {
@@ -26,7 +27,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    #nav .nav-items{
+    #nav .nav-items {
         display: none;
     }
 }

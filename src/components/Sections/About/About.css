@@ -1,10 +1,8 @@
 #about {}
 
-#about .section-heading{
+#about .section-heading {}
 
-}
-
-#about .presentation-container{
+#about .presentation-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,10 +11,10 @@
 }
 
 @media screen and (max-width:768px) {
-    #about .presentation-container{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    #about .presentation-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -38,12 +36,13 @@
     width: 100%;
     display: block;
 }
-#about .presentation-container .presentation-text{
+
+#about .presentation-container .presentation-text {
     width: 81%;
 }
+
 @media screen and (max-width:991px) {
-    #about .presentation-container .presentation-text{
+    #about .presentation-container .presentation-text {
         width: 100%;
     }
-    }
-
+}
