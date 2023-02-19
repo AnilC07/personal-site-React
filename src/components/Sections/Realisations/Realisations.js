@@ -83,7 +83,7 @@ const Realisations = () => {
   useEffect(() => {
     // setSelectedCompetence(["Tous les projets"]);
     filter(selectedCompetence);
-  }, []);
+  }, [selectedCompetence]);
 
   useEffect(() => {
     filter(selectedCompetence);
