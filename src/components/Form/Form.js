@@ -12,7 +12,7 @@ import "./Form.css";
 import useCtx from "../../hook/useCtx";
 
 const Form = ({ closeModal }) => {
-  const context = useCtx();
+  // const context = useCtx();
   const [isPro, setIsPro] = useState(false);
   const [gender, setGender] = useState("");
 
