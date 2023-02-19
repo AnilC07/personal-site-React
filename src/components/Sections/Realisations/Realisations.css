@@ -19,12 +19,6 @@
     display: none;
 }
 
-
-
-/*  */
-
-
-
 #realisations .projects-container .filter .filter-btn {
     display: flex;
     justify-content: space-between;
@@ -66,17 +60,19 @@
         align-items: center;
         border: 1px solid #777;
         border-radius: 5px;
-        background:#fff;
+        background: #fff;
         width: 100px;
     }
 
-    #realisations .projects-container .filter .custom-select select{
-        appearance: none;
+    #realisations .projects-container .filter .custom-select select {
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
         border: none;
         padding: 5px 8px;
     }
 
-    #realisations .projects-container .filter .custom-select select:focus{
+    #realisations .projects-container .filter .custom-select select:focus {
         outline: none;
     }
 
