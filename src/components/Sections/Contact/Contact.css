@@ -79,6 +79,7 @@
 #commentaires .container .visiteur img {
     border-radius: 50%;
     width: 7.5rem;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -166,6 +167,7 @@
     #commentaires .container .visiteur img {
         border-radius: 50%;
         width: 5rem;
+        -o-object-fit: cover;
         object-fit: cover;
     }
 

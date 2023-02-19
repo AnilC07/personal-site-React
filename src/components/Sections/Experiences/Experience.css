@@ -17,15 +17,30 @@
 
 }
 
-@media screen and (min-width: 365px) and (max-width:768px){
+@media screen and (min-width: 365px) and (max-width:768px) {
     #experiences .experience .experience__header-container .show {
         margin-top: 1rem;
     }
 }
 
 #experiences .experience .experience__header-container .show:hover {
+    -webkit-animation: clickMe .3s infinite;
     animation: clickMe .3s infinite;
 
+}
+
+@-webkit-keyframes clickMe {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 @keyframes clickMe {
@@ -83,7 +98,7 @@
     padding-right: 6rem;
 }
 
-#experiences .experience .list .list-item:last-child{
+#experiences .experience .list .list-item:last-child {
     padding-bottom: 2rem;
 }
 
