@@ -83,7 +83,7 @@
 }
 
 #nav__drawer .nav__drawer_items {
-    padding-top: 4rem;
+    padding-top: 13rem;
     list-style: none;
 
 }
@@ -108,7 +108,7 @@
 
 @media screen and (max-width: 412px) {
     #nav__drawer .nav__drawer_item {
-        padding: 0 2.5rem;
+        padding-left: 7rem;
     }
 
 }
