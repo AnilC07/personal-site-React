@@ -31,7 +31,7 @@
         color: #fefefefe;
         text-align: center;
     }
-    
+
     #header .header-container h2 {
         font-size: 4rem;
     }
@@ -49,7 +49,7 @@
     .header-container h1 {
         font-size: 5rem;
         padding: 0 2rem;
-    }
+}
 
     #header .header-container h2 {
         font-size: 3rem;

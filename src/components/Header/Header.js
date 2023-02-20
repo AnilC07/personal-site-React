@@ -6,7 +6,7 @@ const Header = () => {
   return (<div id='header' className='background-wrap'>
     <Navbar />
     <div className="header-container">
-        <h1><em>Anil CELIK</em></h1>
+        <h1>Anil CELIK</h1>
         <h2>Developpeur Front-end JavaScript</h2>
       </div>
     </div>
