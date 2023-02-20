@@ -16,7 +16,7 @@ const SectionHeading = styled.h2`
 
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size:3rem;
+  font-size:2.5rem;
 
   margin-bottom: 3rem;
 `;
