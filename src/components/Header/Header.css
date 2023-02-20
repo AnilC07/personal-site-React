@@ -31,12 +31,7 @@
         color: #fefefefe;
         text-align: center;
     }
-
-    .header-container h1 {
-        display: inline-block;
-        transform: skew(-20deg);
-    }
-
+    
     #header .header-container h2 {
         font-size: 4rem;
     }
