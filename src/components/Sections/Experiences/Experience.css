@@ -159,6 +159,11 @@
         padding-right: 2rem;
     }
 
+    #experiences .experience .missions p,
+    #experiences .experience .missions li {
+        font-size: 1.3rem;
+    }
+
     #experiences .experience .list .list-item {
         padding-right: 0;
     }
