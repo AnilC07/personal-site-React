@@ -53,7 +53,7 @@
         display: none;
     } */
 
-    /* Custom select */
+    /* Custom select
     #realisations .projects-container .filter .custom-select {
         display: flex;
         justify-content: center;
@@ -78,7 +78,7 @@
 
     /*  */
 
-    #realisations .projects-container .filter {
+    /* #realisations .projects-container .filter {
         justify-content: center;
-    }
+    } */ 
 }
