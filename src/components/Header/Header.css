@@ -26,7 +26,7 @@
 /* Media query */
 
 /*Tablette*/
-@media screen and (min-width:768px) and (max-width:991px) {
+@media screen and (min-width:426px) and (max-width:991px) {
     #header .header-container {
         padding: 20rem 0;
         position: relative;
@@ -45,7 +45,7 @@
 }
 
 /*Mobile*/
-@media screen and (max-width:767px) {
+@media screen and (max-width:425px) {
     #header .header-container {
         padding: 25rem 0;
         position: relative;

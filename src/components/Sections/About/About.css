@@ -34,12 +34,16 @@
 /* Media query */
 
 /*Tablette*/
-@media screen and (min-width:768px) and (max-width:991px) {
+@media screen and (min-width:426px) and (max-width:991px) {
     #about .presentation-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+#about .presentation-container .container-profil-img {
+margin: 1rem 0;
+}
 
     #about .presentation-container .container-profil-img {
         width: 20rem;
@@ -47,7 +51,7 @@
 }
 
 /*Mobile*/
-@media screen and (max-width:767px) {
+@media screen and (max-width:425px) {
     #about .presentation-container {
         display: flex;
         flex-direction: column;

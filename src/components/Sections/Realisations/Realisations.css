@@ -80,7 +80,7 @@ background: var(--clr-primary-3);
     padding-top: 4rem;
 }
 
-@media screen and (min-width:768px) and (max-width:991px) {
+@media screen and (min-width:426px) and (max-width:991px) {
     #realisations .projects-container .projects {
         display: flex;
         justify-content: center;
@@ -95,7 +95,7 @@ background: var(--clr-primary-3);
     }
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:425px){
     #realisations .projects-container .filter .filter-btn {
         display: none;
     } 
