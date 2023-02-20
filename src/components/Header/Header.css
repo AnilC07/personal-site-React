@@ -14,8 +14,6 @@
 
 .header-container h1 {
     display: inline-block;
-    transform: skew(-20deg);
-
     font-size: 8rem;
 }
 
