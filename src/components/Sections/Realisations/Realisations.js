@@ -32,9 +32,17 @@ const Realisations = () => {
       // Injecte la valeur du boutton selectionée dans une variable d'état
       setSelectedCompetence((prev) => [...prev, selectedTag]);
     } 
-    //  if(selectedCompetence.includes("Tous les projets") && selectedCompetence.length > 1){
-    //   setSelectedCompetence((prev) => [...prev, prev.filter((el) => el === "Tous les projets")])
-    // }
+
+     if(selectedCompetence[0] === "Tous les projets" && selectedCompetence.length > 0){
+      setSelectedCompetence((prev) => {
+        const shallowCopy = [...prev]
+        console.log(shallowCopy)
+        shallowCopy.splice(0,1)
+        console.log(shallowCopy)
+        return shallowCopy
+      })
+    }
+    // if(selectedCompetence.length === 0)
   };
 
   /**
@@ -62,11 +70,13 @@ const Realisations = () => {
         el.tags.join(" ").includes(selectedCompetence)
       );
       setFilteredProject(projetFiltrer);
-
-      if (selectedCompetence[0] === "Tous les projets") {
+  if (selectedCompetence[0] === "Tous les projets") {
         // Si oui, inject tous les projets dans la variable d'état. État par défault.
         setFilteredProject(projets);
       }
+    }
+    if(selectedCompetence.length === 0){
+      setSelectedCompetence(["Tous les projets"])
     }
   };
 
