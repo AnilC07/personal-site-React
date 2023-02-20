@@ -7,7 +7,7 @@ const Header = () => {
     <Navbar />
     <div className="header-container">
         <h1>Anil CELIK</h1>
-        <h2>Programmeur junior JavaScript</h2>
+        <h2>Developpeur Front-end JavaScript</h2>
       </div>
     </div>
   )

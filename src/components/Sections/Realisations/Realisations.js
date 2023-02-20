@@ -108,18 +108,7 @@ const Realisations = () => {
               );
             })}
           </div>
-          <div className="custom-select">
-            <select>
-              {competences.map((el) => {
-                const { id, competence } = el;
-                return (
-                  <option key={id} id="filter" value={competence}>
-                    {competence}
-                  </option>
-                );
-              })}
-            </select>
-          </div>
+          {/*  */}
         </div>
         <div className="projects">
           {filteredProject.map((projet) => {

@@ -1,48 +1,60 @@
-#about {}
-
-#about .section-heading {}
-
 #about .presentation-container {
     display: flex;
-    justify-content: center;
+    /* justify-content: center;  */
     align-items: center;
     gap: 2rem;
-    text-align: justify;
+    text-align: justify;  
 }
 
-@media screen and (max-width:768px) {
-    #about .presentation-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
+
 
 #about .presentation-container .container-profil-img {
-    width: 20rem;
-    height: 20rem;
-
     overflow: hidden;
     position: relative;
-
+    
     border-radius: 50%;
 
-    box-shadow: 1px 1px 34px 1px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 1px 1px 34px 1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px 1px 34px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.75);
 }
 
 #about .presentation-container .container-profil-img img {
     width: 100%;
     display: block;
+    object-fit: cover;
 }
 
-#about .presentation-container .presentation-text {
-    width: 81%;
+#about .presentation-container .presentation-text p{
+    font-size: 2.2rem;
 }
 
-@media screen and (max-width:991px) {
-    #about .presentation-container .presentation-text {
-        width: 100%;
+
+
+/* Media query */
+
+/*Tablette*/
+@media screen and (min-width:768px) and (max-width:991px) {
+    #about .presentation-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about .presentation-container .container-profil-img {
+        width: 20rem;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width:767px) {
+    #about .presentation-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about .presentation-container .container-profil-img {
+        width: 20rem;
     }
 }

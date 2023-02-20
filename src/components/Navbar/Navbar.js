@@ -1,6 +1,5 @@
 import React, {  useState } from "react";
-import { GiCrossMark } from "react-icons/gi";
-import { FaHamburger } from "react-icons/fa";
+import { RxCross1,RxHamburgerMenu } from "react-icons/rx";
 import {IoMdContact} from "react-icons/io"
 import { HiComputerDesktop } from "react-icons/hi2";
 import {MdOutlineWorkOutline,MdMail} from "react-icons/md"
@@ -30,7 +29,7 @@ const Navbar = () => {
           <SideNav show={drawerIsOpen} onClick={closeDrawerHandler}>
             <nav id="nav__drawer">
               <div className="nav__drawer_cross-icon">
-                <GiCrossMark fill="#faf9f9" className="icons" />
+                <RxCross1 fill="#faf9f9" className="icons" />
               </div>
               <ul className="nav__drawer_items">
                 <li className="nav__drawer_item">
@@ -56,7 +55,7 @@ const Navbar = () => {
 
       <nav id="nav">
         <div className="nav-burger-icon" onClick={openDrawerHandler}>
-          <FaHamburger fill="#faf9f9" />
+          <RxHamburgerMenu  />
         </div>
         <ul className="nav-items">
           <a href="#about">

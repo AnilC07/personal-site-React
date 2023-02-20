@@ -18,7 +18,7 @@ const Experience = ({
     <div className="experience" key={id}>
       <div className="experience__header-container">
         <div className="header">
-          <div style={{ overflow: "hidden" }}>
+          <div>
             <Logo logo={logo} company={company} />
           </div>
           <div className="informations">
@@ -33,7 +33,7 @@ const Experience = ({
                 marginLeft: "auto",
               }}
             >
-              <p style={{ paddingRight: "1rem" }}>
+              <p className="date">
                 {debut} {end && <span>- {end}</span>}
               </p>
             </div>

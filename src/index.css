@@ -67,58 +67,16 @@ html {
   box-sizing: border-box;
 }
 
-h1 {
-  font-size: 6rem;
-  /* 60px */
-}
-
-h2 {
-  font-size: 4rem;
-  /* 40px */
-}
-
-h3 {
-  font-size: 3rem;
-  /* 30px */
-
-}
-
+h1,
+h2,
+h3,
+h4,
+a,
 p,
 li,
-span,
-label,
-a,
-button {
-  font-size: 1.8rem;
-  /* 21px */
-}
-
-@media screen and (max-width: 991px) {
-  h1 {
-    font-size: 5rem;
-    /* 50px */
-  }
-  
-  h2 {
-    font-size: 2rem;
-    /* 40px */
-  }
-  
-  h3 {
-    font-size: 1.6rem;
-    /* 30px */
-  
-  }
-  
-  p,
-  li,
-  span,
-  label,
-  a,
-  button {
-    font-size: 1rem;
-    /* 21px */
-  }
+span {
+  font-size: 1rem;
+  /* 10px */
 }
 
 a,
@@ -139,57 +97,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.slide-in-left-enter {
-  transform: translateX(-100%);
-}
-
-.slide-in-left-enter-active {
-  transform: translateX(0);
-  opacity: 1;
-  transition: all 1000ms;
-}
-
-.slide-in-left-exit {
-  transform: translateX(0%);
-  opacity: 1;
-}
-
-.slide-in-left-exit-active {
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: all 200ms;
-}
-
-
 /* this is better to use transform for center the modal and width  */
 .ReactModal__Content {
-    position: absolute;
-    max-width: 50%;
+  position: absolute;
+  max-width: 50%;
 
-    left: 50%;
-    top: 50%;
-    overflow: auto;
-    background-color: #ccc;
-    -webkit-transform: translate(-50,-50%);
-    transform: translate(-50,-50%);
+  left: 50%;
+  top: 50%;
+  overflow: auto;
+  background-color: #ccc;
+  -webkit-transform: translate(-50, -50%);
+  transform: translate(-50, -50%);
 }
 
-@media screen and (min-width: 992px) { 
-  .ReactModal__Content {
-        width: 80%;
-    }
-}
+/* Media query */
 
-@media screen and (min-width: 426px) and (max-width: 991) { 
-  .ReactModal__Content {
-        width: 100%;
-        /* max-height: 80%; */
-    }
-}
+/*Tablette*/
+@media screen and (min-width:768px) and (max-width:991px) {}
 
-@media screen and (max-width: 425px) { 
-  .ReactModal__Content {
-        width: 100%;
-        max-height: 100%;
-    }
-}
+/*Mobile*/
+@media screen and (max-width:767px) {}

@@ -8,6 +8,7 @@ import Experiences from "./components/Sections/Experiences/Experiences";
 import Contact from "./components/Sections/Contact/Contact";
 
 import UserService from "./Ctx";
+import Footer from "./components/Sections/Footer/Footer";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Contact />
         </UserService>
       </main>
+      <Footer />
     </>
   );
 }

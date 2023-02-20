@@ -14,13 +14,10 @@
     position: relative;
     bottom: 1.5rem;
     cursor: pointer;
-
 }
 
-@media screen and (min-width: 365px) and (max-width:768px) {
-    #experiences .experience .experience__header-container .show {
-        margin-top: 1rem;
-    }
+#experiences .experience .experience__header-container .show p{
+font-size: 1.3rem;
 }
 
 #experiences .experience .experience__header-container .show:hover {
@@ -74,22 +71,44 @@
     border-left: 2px solid black;
 }
 
+#experiences .experience .informations h3 {
+    font-size: 2.3rem;
+}
+#experiences .experience .informations .date {
+    font-size: 1.8rem;
+    padding-right: 1rem;
+}
+
 
 #experiences .experience .missions {
     text-align: justify;
     margin-left: 5rem;
     padding-top: 2rem;
     padding-right: 6rem;
+    font-size: 1.8rem;
+}
+
+#experiences .experience .missions li{
+    padding: 0.3rem 0;
+}
+
+#experiences .experience .missions p,#experiences .experience .missions li {
+    font-size: 1.8rem;
 }
 
 #experiences .experience .description {
     text-align: justify;
     padding-bottom: 1rem;
+    font-size: 1.8rem;
 }
 
 #experiences .experience .list {
     text-align: justify;
     list-style: none;
+}
+
+#experiences .experience .list p {
+    font-size: 1.8rem;
 }
 
 #experiences .experience .list .list-item {
@@ -102,9 +121,36 @@
     padding-bottom: 2rem;
 }
 
-#experiences .experience .list .list-item .puce {}
+/* Media query */
 
-@media screen and (max-width: 768px) {
+/*Tablette*/
+@media screen and (min-width:768px) and (max-width:991px) {
+    #experiences .experience .informations h3 {
+        font-size: 2rem;
+    }
+
+    #experiences .experience .missions p,#experiences .experience .missions li {
+        font-size: 1.3rem;
+    }
+
+    #experiences .experience .informations .date {
+        font-size: 1.4rem;
+        padding-right: 1rem;
+    }
+    
+}
+
+/*Mobile*/
+@media screen and (max-width:767px) {
+    #experiences .experience .informations h3 {
+        font-size: 1.4rem;
+    }
+
+    #experiences .experience .informations .date {
+        font-size: 1.4rem;
+        padding-right: 1rem;
+    }
+
     #experiences .experience .missions {
         margin-left: 2rem;
         padding-right: 2rem;
@@ -117,4 +163,6 @@
     #experiences .experience .description {
         padding-right: 0;
     }
+
+
 }

@@ -1,4 +1,5 @@
 #contact .msg {
+    font-size: 1.8rem;
     text-align: justify;
 }
 
@@ -53,19 +54,21 @@
     fill: white;
     font-size: 2.8rem;
     position: absolute;
+    top: 4rem;
 }
 
 #commentaires .container .quote.left {
-    top: 4rem;
+
     left: 4rem;
 }
 
 #commentaires .container .quote.right {
-    top: 4rem;
+
     right: 4rem;
 }
 
 #commentaires .container .message {
+    font-size: 1.3rem;
     text-align: justify;
 }
 
@@ -101,7 +104,7 @@
 #commentaires .chevron {
     font-size: 3rem;
     position: absolute;
-    top: 15rem;
+    top: 12rem;
 
     fill: rgba(0, 0, 0, .3);
     transform: scale(1);
@@ -172,11 +175,11 @@
     }
 
     #commentaires .detail-visiteur h4 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     #commentaires .detail-visiteur p {
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin: 0;
     }
 

@@ -21,13 +21,13 @@
 
 #realisations .projects-container .filter .filter-btn {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 3rem;
 }
 
 #realisations .projects-container .filter .filter-btn button {
-    width: 14.5rem;
+    width: 16rem;
     box-shadow: var(--btn-shadow);
 }
 
@@ -49,9 +49,9 @@
         justify-content: center;
     }
 
-    #realisations .projects-container .filter .filter-btn {
+    /* #realisations .projects-container .filter .filter-btn {
         display: none;
-    }
+    } */
 
     /* Custom select */
     #realisations .projects-container .filter .custom-select {
@@ -82,24 +82,3 @@
         justify-content: center;
     }
 }
-
-/* @media screen and (max-width:768px) {
-    #realisations .projects-container .projects {
-        display: flex;
-        justify-content: center;
-    }
-
-    #realisations .projects-container .filter .filter-btn {
-
-        display: none;
-
-    }
-
-    #realisations .projects-container .filter .custom-select {
-        display: block;
-    }
-
-    #realisations .projects-container .filter {
-        justify-content: center;
-    }
-} */
