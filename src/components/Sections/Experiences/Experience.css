@@ -11,8 +11,7 @@
 
 #experiences .experience .experience__header-container .show {
     text-align: center;
-    position: relative;
-    bottom: 1.5rem;
+padding-bottom: 1rem;
     cursor: pointer;
 }
 
@@ -145,6 +144,15 @@
 
 /*Mobile*/
 @media screen and (max-width:425px) {
+    #experiences .experience .header {
+        flex-direction: column;
+        gap: .7rem;
+    }
+
+    #experiences .experience .informations{
+        border-left: none;
+    }
+
     #experiences .experience .informations h3 {
         font-size: 1.4rem;
     }
@@ -152,6 +160,10 @@
     #experiences .experience .informations .date {
         font-size: 1.4rem;
         padding-right: 1rem;
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        padding: 0;
     }
 
     #experiences .experience .missions {
