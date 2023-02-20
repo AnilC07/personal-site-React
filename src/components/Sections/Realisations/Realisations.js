@@ -10,11 +10,10 @@ import { useEffect, useState } from "react";
 
 const Realisations = () => {
   const [filteredProject, setFilteredProject] = useState(projets);
-  // const [selectedCompetence, setSelectedCompetence] = useState([
-  //   "Tous les projets",
-  // ]);
-  const [selectedCompetence, setSelectedCompetence] = useState([]);
-  // console.log([] === null);
+  const [selectedCompetence, setSelectedCompetence] = useState([
+    "Tous les projets",
+  ]);
+
 
   /**
    * Fonction qui set les compétences selectionnées
@@ -28,18 +27,14 @@ const Realisations = () => {
     if (selectedCompetence.includes(selectedTag)) {
       // Si oui, on la retire de la variable d'état
       setSelectedCompetence((prev) => prev.filter((el) => el !== selectedTag));
-    } else {
+    } else if (!selectedCompetence.includes(selectedTag)){
       // Sinon, on rajoute la nouvelle valeur
       // Injecte la valeur du boutton selectionée dans une variable d'état
       setSelectedCompetence((prev) => [...prev, selectedTag]);
-    }
-    //         if(selectedCompetence.join(" ").includes(selectedCompetence) !== 'Tous les projets'){
-    // console.log('hello world')
-
-    //     }
-    if (selectedCompetence === []) {
-      setSelectedCompetence(["Tous les projets"]);
-    }
+    } 
+    //  if(selectedCompetence.includes("Tous les projets") && selectedCompetence.length > 1){
+    //   setSelectedCompetence((prev) => [...prev, prev.filter((el) => el === "Tous les projets")])
+    // }
   };
 
   /**
@@ -49,27 +44,17 @@ const Realisations = () => {
   const filter = (selectedCompetence) => {
     // Verifie la valeur du boutton clické
 
-    if (selectedCompetence[0] === "Tous les projets") {
-      // Si oui, inject tous les projets dans la variable d'état. État par défault.
-      setFilteredProject(projets);
-    }
-    if (selectedCompetence === []) {
-      // Si oui, inject tous les projets dans la variable d'état. État par défault.
-      setSelectedCompetence(["Tous les projets"]);
-      setFilteredProject(projets);
-    }
-
     if (selectedCompetence.length > 1) {
       // Si selectedCompetence est un array avec plus d'1 elements, on boucle dessus et ajoute les projets correspondant dans la variable d'état
       let arr = [];
       selectedCompetence.map((competence) => {
-       return arr.push(
+        return arr.push(
           projets.filter((el) => el.tags.join(" ").includes(competence))
         );
         //     // return setFilteredProject((prev) =>[...prev, competence.filter(el=>el.tags.join(" ").includes(selectedCompetence) === competence)])
       });
-      arr= arr.flat();
-      console.log(arr)
+      arr = arr.flat();
+      console.log(arr);
       setFilteredProject(arr);
     } else {
       // Si différent de 'Tous les projets', filtre les projets ayant le tag associé à la valeur du boutton
@@ -77,15 +62,18 @@ const Realisations = () => {
         el.tags.join(" ").includes(selectedCompetence)
       );
       setFilteredProject(projetFiltrer);
+
+      if (selectedCompetence[0] === "Tous les projets") {
+        // Si oui, inject tous les projets dans la variable d'état. État par défault.
+        setFilteredProject(projets);
+      }
     }
   };
 
   useEffect(() => {
-    // setSelectedCompetence(["Tous les projets"]);
-    filter(selectedCompetence);
-  }, [selectedCompetence]);
-
-  useEffect(() => {
+    if(selectedCompetence === null){
+      setSelectedCompetence(['Tous les projets'])
+    }
     filter(selectedCompetence);
   }, [selectedCompetence]);
 
@@ -108,7 +96,22 @@ const Realisations = () => {
               );
             })}
           </div>
-          {/*  */}
+          <div className="select">
+            <select>
+              {competences.map((el) => {
+                const { id, competence } = el;
+                return (
+                  <option
+                    key={id}
+                    value={competence}
+                    onClick={selectedCompetence}
+                  >
+                    {competence}
+                  </option>
+                );
+              })}
+            </select>
+          </div>
         </div>
         <div className="projects">
           {filteredProject.map((projet) => {

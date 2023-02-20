@@ -5,6 +5,7 @@ import cls from 'classnames'
 import "./FilterButton.css";
 
 const FilterButton = ({ competence, id, filterOnClick, selected }) => {
+  console.log(selected)
   return (
     <button
       id="filter"

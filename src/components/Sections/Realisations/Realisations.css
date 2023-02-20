@@ -13,11 +13,9 @@
     justify-content: center;
 }
 
-
-
-#realisations .projects-container .filter .custom-select {
+/* #realisations .projects-container .filter .custom-select {
     display: none;
-}
+} */
 
 #realisations .projects-container .filter .filter-btn {
     display: flex;
@@ -35,6 +33,45 @@
     border: none;
 }
 
+#realisations .projects-container .filter .select select{
+    appearance:unset;
+    border:none;
+    padding: 1rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background: var(--clr-grey-3);
+    width:30rem;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+
+    display: none;
+}
+
+#realisations .projects-container .filter .select select:focus{
+    outline: none;
+}
+
+#realisations .projects-container .filter .select select option{
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-align: center;
+
+}
+
+#realisations .projects-container .filter .select select option:hover{
+background: var(--clr-primary-3);
+}
+
+
 #realisations .projects-container .projects {
     display: flex;
     /* justify-content: space-between; */
@@ -43,42 +80,27 @@
     padding-top: 4rem;
 }
 
-@media screen and (max-width:1239px) {
+@media screen and (min-width:768px) and (max-width:991px) {
     #realisations .projects-container .projects {
         display: flex;
         justify-content: center;
     }
 
-    /* #realisations .projects-container .filter .filter-btn {
+    #realisations .projects-container .filter .filter-btn {
         display: none;
-    } */
+    } 
 
-    /* Custom select
-    #realisations .projects-container .filter .custom-select {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #777;
-        border-radius: 5px;
-        background: #fff;
-        width: 100px;
+    #realisations .projects-container .filter .select select{
+        display: block;
     }
+}
 
-    #realisations .projects-container .filter .custom-select select {
-        -webkit-appearance: none;
-           -moz-appearance: none;
-                appearance: none;
-        border: none;
-        padding: 5px 8px;
+@media screen and (max-width:767px){
+    #realisations .projects-container .filter .filter-btn {
+        display: none;
+    } 
+
+    #realisations .projects-container .filter .select select{
+        display: block;
     }
-
-    #realisations .projects-container .filter .custom-select select:focus {
-        outline: none;
-    }
-
-    /*  */
-
-    /* #realisations .projects-container .filter {
-        justify-content: center;
-    } */ 
 }
