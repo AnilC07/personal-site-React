@@ -81,9 +81,9 @@ const Realisations = () => {
   };
 
   useEffect(() => {
-    if(selectedCompetence === null){
-      setSelectedCompetence(['Tous les projets'])
-    }
+    // if(selectedCompetence === null){
+    //   setSelectedCompetence(['Tous les projets'])
+    // }
     filter(selectedCompetence);
   }, [selectedCompetence]);
 
