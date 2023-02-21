@@ -123,10 +123,12 @@ const Realisations = () => {
             </select>
           </div>
         </div>
+        <div className="projectsWrapper">
         <div className="projects">
           {filteredProject.map((projet) => {
             return <ProjectCard key={projet.id} {...projet} />;
           })}
+        </div>
         </div>
       </div>
     </section>

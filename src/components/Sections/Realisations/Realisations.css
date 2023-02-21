@@ -1,6 +1,6 @@
 #realisations {}
 
-#realisations .projects-container {}
+#realisations .projects-container .projectsWrapper {}
 
 #realisations .projects-container .projects {
     display: flex;
@@ -33,9 +33,9 @@
     border: none;
 }
 
-#realisations .projects-container .filter .select select{
-    appearance:unset;
-    border:none;
+#realisations .projects-container .filter .select select {
+    appearance: unset;
+    border: none;
     padding: 1rem;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -43,7 +43,7 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     background: var(--clr-grey-3);
-    width:30rem;
+    width: 30rem;
     color: white;
     font-weight: 600;
     text-align: center;
@@ -51,11 +51,11 @@
     display: none;
 }
 
-#realisations .projects-container .filter .select select:focus{
+#realisations .projects-container .filter .select select:focus {
     outline: none;
 }
 
-#realisations .projects-container .filter .select select option{
+#realisations .projects-container .filter .select select option {
     font-weight: 600;
     border: none;
     border-radius: 5px;
@@ -67,8 +67,8 @@
 
 }
 
-#realisations .projects-container .filter .select select option:hover{
-background: var(--clr-primary-3);
+#realisations .projects-container .filter .select select option:hover {
+    background: var(--clr-primary-3);
 }
 
 
@@ -80,27 +80,81 @@ background: var(--clr-primary-3);
     padding-top: 4rem;
 }
 
-@media screen and (min-width:426px) and (max-width:991px) {
+@media screen and (min-width:909px) and (max-width:991px) {
     #realisations .projects-container .projects {
-        display: flex;
+        display:flex;
         justify-content: center;
+        flex-wrap: nowrap;
     }
 
     #realisations .projects-container .filter .filter-btn {
         display: none;
-    } 
+    }
 
-    #realisations .projects-container .filter .select select{
+    #realisations .projects-container .filter .select select {
         display: block;
+    }
+
+    #realisations .projects-container .projectsWrapper {
+        /* position:relative; */
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-top: 4rem;
+
+    }
+
+    #realisations .projects-container .projectsWrapper .projects {}
+}
+
+@media screen and (min-width:426px) and (max-width:908px) {
+    #realisations .projects-container .projects {
+        display:flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    #realisations .projects-container .filter .filter-btn {
+        display: none;
+    }
+
+    #realisations .projects-container .filter .select select {
+        display: block;
+    }
+
+    #realisations .projects-container .projectsWrapper {
+        /* position:relative; */
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-top: 4rem;
+
     }
 }
 
-@media screen and (max-width:425px){
+
+
+@media screen and (max-width:425px) {
+    #realisations .projects-container .projects {
+        display:flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
     #realisations .projects-container .filter .filter-btn {
         display: none;
-    } 
+    }
 
-    #realisations .projects-container .filter .select select{
+    #realisations .projects-container .filter .select select {
         display: block;
+    }
+
+    #realisations .projects-container .projectsWrapper {
+        /* position:relative; */
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-top: 4rem;
+
     }
 }
