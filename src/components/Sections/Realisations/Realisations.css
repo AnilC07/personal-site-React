@@ -5,6 +5,7 @@
 #realisations .projects-container .projects {
     display: flex;
     justify-content: center;
+    padding-top: 3rem;
 }
 
 #realisations .projects-container .filter {
@@ -71,45 +72,119 @@
     background: var(--clr-primary-3);
 }
 
+#realisations .projects-container .filter .select .reset {
+    display: none;
+    align-items: center;
+    font-size: 2.5rem;
+    padding: 6px 20px;
+    color: white;
+    background: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#realisations .projects-container .infoFiltre {
+    margin-top: 2rem;
+    margin-right: 2rem;
+
+    position: relative;
+
+    display: none;
+
+
+
+
+}
+
+#realisations .projects-container .infoFiltre p {
+
+    display: inline-flex;
+    justify-content: space-between;
+    gap: .7rem;
+
+    padding: 1rem 2.5rem;
+    background: var(--clr-primary-3);
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+#realisations .projects-container .infoFiltre .choisis {
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: inline-block;
+    color: white;
+
+}
+
+#realisations .projects-container .infoFiltre .retirerFiltre {
+    display: inline-block;
+    color: white;
+    font-size: 1.3rem;
+
+    position: absolute;
+    top: .3rem;
+    right: .3rem;
+
+}
+
 
 #realisations .projects-container .projects {
     display: flex;
     /* justify-content: space-between; */
     flex-wrap: wrap;
     gap: 2.5rem;
-    padding-top: 4rem;
+    /* padding-top: 1rem; */
 }
 
 @media screen and (min-width:909px) and (max-width:991px) {
     #realisations .projects-container .projects {
-        display:flex;
+        display: flex;
         justify-content: center;
         flex-wrap: nowrap;
     }
+
 
     #realisations .projects-container .filter .filter-btn {
         display: none;
     }
 
+    #realisations .projects-container .filter .select {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #realisations .projects-container .filter .select .reset {
+        display: flex;
+    }
+
+
     #realisations .projects-container .filter .select select {
         display: block;
+    }
+
+    #realisations .projects-container .infoFiltre {
+        display: flex;
+        gap: 2rem;
     }
 
     #realisations .projects-container .projectsWrapper {
         /* position:relative; */
         display: flex;
-        overflow-x: scroll;
+        overflow-x: visible;
+        scrollbar-width: 1rem;
         overflow-y: hidden;
-        padding-top: 4rem;
-
     }
-
-    #realisations .projects-container .projectsWrapper .projects {}
 }
 
 @media screen and (min-width:426px) and (max-width:908px) {
     #realisations .projects-container .projects {
-        display:flex;
+        display: flex;
         justify-content: center;
         flex-wrap: nowrap;
     }
@@ -118,14 +193,30 @@
         display: none;
     }
 
+    #realisations .projects-container .filter .select {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
     #realisations .projects-container .filter .select select {
         display: block;
     }
 
+    #realisations .projects-container .filter .select .reset {
+        display: flex;
+    }
+
+    #realisations .projects-container .infoFiltre {
+        display: flex;
+        gap: 2rem;
+    }
+
+
     #realisations .projects-container .projectsWrapper {
         /* position:relative; */
         display: flex;
-        overflow-x: scroll;
+        /* overflow-x: scroll; */
         overflow-y: hidden;
         padding-top: 4rem;
 
@@ -136,7 +227,7 @@
 
 @media screen and (max-width:425px) {
     #realisations .projects-container .projects {
-        display:flex;
+        display: flex;
         justify-content: center;
         flex-wrap: nowrap;
     }
@@ -145,9 +236,25 @@
         display: none;
     }
 
+    #realisations .projects-container .filter .select {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
     #realisations .projects-container .filter .select select {
         display: block;
     }
+
+    #realisations .projects-container .filter .select .reset {
+        display: flex;
+    }
+
+    #realisations .projects-container .infoFiltre {
+        display: flex;
+        gap: 2rem;
+    }
+
 
     #realisations .projects-container .projectsWrapper {
         /* position:relative; */

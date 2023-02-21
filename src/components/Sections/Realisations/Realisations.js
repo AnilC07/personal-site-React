@@ -1,5 +1,6 @@
 import SectionHeading from "../../SectionHeading";
 import FilterButton from "../../UI/FilterButton";
+import { BsTrash } from "react-icons/bs";
 
 import { competences, projets } from "../../../data";
 
@@ -14,35 +15,59 @@ const Realisations = () => {
     "Tous les projets",
   ]);
 
-
   /**
    * Fonction qui set les compétences selectionnées
    * @param {*} e
    */
   const setProjectsToDisplay = (e) => {
+    e.preventDefault();
     // Récupere la valeur correspondante au boutton clické
     const selectedTag = e.target.value;
+    console.log(e);
 
     // Verifier si la valeur clické et deja présente
     if (selectedCompetence.includes(selectedTag)) {
       // Si oui, on la retire de la variable d'état
       setSelectedCompetence((prev) => prev.filter((el) => el !== selectedTag));
-    } else if (!selectedCompetence.includes(selectedTag)){
+    } else if (!selectedCompetence.includes(selectedTag)) {
       // Sinon, on rajoute la nouvelle valeur
       // Injecte la valeur du boutton selectionée dans une variable d'état
       setSelectedCompetence((prev) => [...prev, selectedTag]);
-    } 
-
-     if(selectedCompetence[0] === "Tous les projets" && selectedCompetence.length > 0){
-      setSelectedCompetence((prev) => {
-        const shallowCopy = [...prev]
-        console.log(shallowCopy)
-        shallowCopy.splice(0,1)
-        console.log(shallowCopy)
-        return shallowCopy
-      })
     }
-    // if(selectedCompetence.length === 0)
+
+    if (
+      selectedCompetence[0] === "Tous les projets" &&
+      selectedCompetence.length > 0
+    ) {
+      setSelectedCompetence((prev) => {
+        const shallowCopy = [...prev];
+        console.log(shallowCopy);
+        shallowCopy.splice(0, 1);
+        console.log(shallowCopy);
+        return shallowCopy;
+      });
+    }
+  };
+
+  const removeCompetence = (competence) => {
+    console.log({ competence });
+    if (selectedCompetence.includes(competence)) {
+      setSelectedCompetence((prev) => prev.filter((el) => el !== competence));
+    }
+  };
+
+  const resetCompetence = () => {
+    setSelectedCompetence(["Tous les projets"]);
+    const option = document.querySelector("option")
+    
+    if(option.getAttribute("selected")) {
+      option.removeAttribute("selected");
+    }
+    if(!option.getAttribute("selected")) {
+      option.setAttribute("selected", true)
+    }
+    
+
   };
 
   /**
@@ -70,13 +95,13 @@ const Realisations = () => {
         el.tags.join(" ").includes(selectedCompetence)
       );
       setFilteredProject(projetFiltrer);
-  if (selectedCompetence[0] === "Tous les projets") {
+      if (selectedCompetence[0] === "Tous les projets") {
         // Si oui, inject tous les projets dans la variable d'état. État par défault.
         setFilteredProject(projets);
       }
     }
-    if(selectedCompetence.length === 0){
-      setSelectedCompetence(["Tous les projets"])
+    if (selectedCompetence.length === 0) {
+      setSelectedCompetence(["Tous les projets"]);
     }
   };
 
@@ -107,28 +132,44 @@ const Realisations = () => {
             })}
           </div>
           <div className="select">
-            <select>
+            <select onChange={setProjectsToDisplay}>
               {competences.map((el) => {
                 const { id, competence } = el;
                 return (
                   <option
                     key={id}
                     value={competence}
-                    onClick={selectedCompetence}
+                    onClick={setProjectsToDisplay}
+                    // selected={!selectedCompetence || selectedCompetence === ['Tous les projets'] ? true : false}
                   >
                     {competence}
                   </option>
                 );
               })}
             </select>
+            {selectedCompetence.length > 0 &&
+              selectedCompetence[0] !== "Tous les projets" && (
+                <div className="reset" onClick={resetCompetence}>
+                  <BsTrash />
+                </div>
+              )}
           </div>
         </div>
-        <div className="projectsWrapper">
-        <div className="projects">
-          {filteredProject.map((projet) => {
-            return <ProjectCard key={projet.id} {...projet} />;
+        <div className="infoFiltre">
+          {selectedCompetence.map((el, idx) => {
+            return (
+              <p key={idx} onClick={() => removeCompetence(el)}>
+                <span className="choisis">{el}</span>
+              </p>
+            );
           })}
         </div>
+        <div className="projectsWrapper">
+          <div className="projects">
+            {filteredProject.map((projet) => {
+              return <ProjectCard key={projet.id} {...projet} />;
+            })}
+          </div>
         </div>
       </div>
     </section>
