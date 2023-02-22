@@ -48,6 +48,7 @@ const Contact = () => {
   // Ferme la modal
   function closeModal() {
     setIsOpen(false);
+    document.body.style.overflow = "unset";
   }
 
   const sendMail = () => {

@@ -105,7 +105,7 @@ body {
 
   left: 50%;
   top: 50%;
-  overflow: auto;
+  overflow: scroll;
   background-color: #ccc;
   /* -webkit-transform: translate(-50, -50%); */
   transform: translate(-50, -50%);
@@ -118,6 +118,6 @@ body {
   .ReactModal__Content {
     max-width: 100%;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
   }
 }
