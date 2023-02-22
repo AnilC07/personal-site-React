@@ -66,8 +66,6 @@ const Realisations = () => {
     if(!option.getAttribute("selected")) {
       option.setAttribute("selected", true)
     }
-    
-
   };
 
   /**

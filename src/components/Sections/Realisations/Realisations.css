@@ -90,10 +90,6 @@
     position: relative;
 
     display: none;
-
-
-
-
 }
 
 #realisations .projects-container .infoFiltre p {
@@ -195,8 +191,8 @@
 
     #realisations .projects-container .filter .select {
         display: flex;
-        align-items: center;
-        gap: 2rem;
+        flex-direction: column;
+        gap: 1rem;
     }
 
     #realisations .projects-container .filter .select select {
@@ -205,6 +201,8 @@
 
     #realisations .projects-container .filter .select .reset {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #realisations .projects-container .infoFiltre {
@@ -238,8 +236,8 @@
 
     #realisations .projects-container .filter .select {
         display: flex;
-        align-items: center;
-        gap: 2rem;
+        flex-direction: column;
+        gap: 1rem;
     }
 
     #realisations .projects-container .filter .select select {
@@ -248,10 +246,13 @@
 
     #realisations .projects-container .filter .select .reset {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #realisations .projects-container .infoFiltre {
         display: flex;
+        flex-wrap: wrap;
         gap: 2rem;
     }
 
