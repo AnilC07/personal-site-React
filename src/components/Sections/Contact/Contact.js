@@ -42,6 +42,7 @@ const Contact = () => {
   // Affiche la modal
   function openModal() {
     setIsOpen(true);
+    document.body.style.overflow = "hidden";
   }
 
   // Ferme la modal
