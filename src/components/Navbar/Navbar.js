@@ -15,10 +15,12 @@ const Navbar = () => {
   const openDrawerHandler = () => {
     setDrawerIsOpen(true);
     console.log(drawerIsOpen);
+    document.body.style.overflow = "hidden"; 
   };
 
   const closeDrawerHandler = () => {
     setDrawerIsOpen(false);
+    document.body.style.overflow = "unset";
   };
 
   return (
