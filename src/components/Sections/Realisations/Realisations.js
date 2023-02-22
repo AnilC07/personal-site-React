@@ -85,6 +85,9 @@ const Realisations = () => {
         //     // return setFilteredProject((prev) =>[...prev, competence.filter(el=>el.tags.join(" ").includes(selectedCompetence) === competence)])
       });
       arr = arr.flat();
+
+      // Verifie si le tableau contient de fois le meme element
+     arr = [...new Set(arr)]
       console.log(arr);
       setFilteredProject(arr);
     } else {
