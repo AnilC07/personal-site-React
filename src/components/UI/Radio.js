@@ -4,17 +4,18 @@ import "./Radio.css";
 
 const Radio = ({ label, value, name, setCategoryOfVisitor }) => {
   return (
-    <div className="radio-groups">
+
       <div className="radio-group">
         <input
+        id={value}
           type="radio"
           value={value}
           name={name}
           onClick={() => setCategoryOfVisitor(value)}
         />
-        <label>{label}</label>
+        <label htmlFor={value}>{label}</label>
       </div>
-    </div>
+    
   );
 };
 

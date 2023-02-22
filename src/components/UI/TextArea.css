@@ -1,44 +1,36 @@
 .message {
     position: relative;
     display: flex;
+    gap: 14rem;
 }
 
 .message label {
-    display: inline-block;
-    width: 20.5rem;
+    display: block;
 }
 
 .message textarea {
-    display: inline-block;
-    width: 40rem;
+    display: block;
     padding: 0.5rem 0;
     padding-left: 0.9rem;
     border-radius: 5px;
 }
 
 .message .decompte {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: end;
 }
 
-@media screen and (max-width:991px){
+@media screen and (max-width:669px){
     .message {
         position: relative;
         display: flex;
         flex-direction: column;
-        padding: 1rem 0;
+        gap: 1rem;
     }
 
-    .message label {
-        display: inline-block;
-       width:auto;
-        padding-bottom: 1rem;
+    .message .decompte {
+        font-size: 1.2rem;
+        text-align: start;
     }
-    .message textarea {
-        display: inline-block;
-        /* max-width: 40rem;
-        min-width: 30rem; */
-        padding: 0.5rem 0;
-        padding-left: 0.9rem;
-    }
+
 }

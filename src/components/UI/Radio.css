@@ -1,20 +1,17 @@
 .radio-groups{
 display: flex;
-margin-left: 4rem;
-margin-bottom: 1rem;
+align-items: center;
+gap: 5rem;
 }
 
 .radio-group{
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-right: 2rem;
 }
 
-.radio-group input[radio]{
-    
+@media screen and (max-width:669px){
+.radio-groups{
+    display: flex;
 }
-
-@media screen and (max-width:768px){
-
 }

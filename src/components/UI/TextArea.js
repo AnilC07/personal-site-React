@@ -23,7 +23,7 @@ const TextArea = ({ id, label, placeholder, name }) => {
           id={id}
           placeholder={placeholder}
           rows="4"
-          cols=""
+          cols="40"
           name={name}
           onChange={limitNumOfChars}
           maxLength="400"

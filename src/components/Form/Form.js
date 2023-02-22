@@ -46,8 +46,7 @@ const Form = ({ closeModal }) => {
         .querySelector(".icon-utilisateur .manIcon")
         .classList.remove("selected");
 
-
-        // console.log(context.setFormulaire)
+      // console.log(context.setFormulaire)
     }
     if (gender !== "femme") {
       document
@@ -102,20 +101,22 @@ const Form = ({ closeModal }) => {
           placeholder="Veuillez entrer votre email"
           name="email"
         />
-        <div style={{ display: "flex" }}>
+        <div className="recruteur">
           <label className="isPro">Recruteur ?</label>
-          <Radio
-            label="oui"
-            value="oui"
-            name="pro"
-            setCategoryOfVisitor={setCategoryOfVisitor}
-          />
-          <Radio
-            label="non"
-            value="non"
-            name="pro"
-            setCategoryOfVisitor={setCategoryOfVisitor}
-          />
+          <div className="radio-groups">
+            <Radio
+              label="oui"
+              value="oui"
+              name="pro"
+              setCategoryOfVisitor={setCategoryOfVisitor}
+            />
+            <Radio
+              label="non"
+              value="non"
+              name="pro"
+              setCategoryOfVisitor={setCategoryOfVisitor}
+            />
+          </div>
         </div>
         {isPro && (
           <>
