@@ -86,8 +86,8 @@ const Realisations = () => {
       });
       arr = arr.flat();
 
-      // Verifie si le tableau contient de fois le meme element
-     arr = [...new Set(arr)]
+      // Réarrange l'array pour afficher des items de facons unique.
+     arr = [...new Set(arr)] 
       console.log(arr);
       setFilteredProject(arr);
     } else {
