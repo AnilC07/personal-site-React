@@ -9,7 +9,7 @@ import { jobs } from "../../../data";
 const Experiences = () => {
 
   return (
-    <section id="experiences">
+    <section className="experiences">
       <SectionHeading>Expériences professionnelles</SectionHeading>
       {jobs.map((job) => {
         return <Experience {...job} key={job.id} />;

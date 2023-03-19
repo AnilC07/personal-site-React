@@ -29,24 +29,24 @@ const Navbar = () => {
         <>
           <Backdrop onClick={closeDrawerHandler} />
           <SideNav show={drawerIsOpen} onClick={closeDrawerHandler}>
-            <nav id="nav__drawer">
-              <div className="nav__drawer_cross-icon">
+            <nav className="nav__drawer">
+              <div className="nav__drawer-cross-icon">
                 <RxCross1 fill="#faf9f9" className="icons" />
               </div>
-              <ul className="nav__drawer_items">
-                <li className="nav__drawer_item">
+              <ul className="nav__drawer-items">
+                <li className="nav__drawer-item">
                   <IoMdContact className="icon" /> <a href="#about">A PROPOS </a>
                 </li>
 
-                <li className="nav__drawer_item">
+                <li className="nav__drawer-item">
                   <HiComputerDesktop className="icon"/> <a href="#realisations">RÉALISATIONS</a>
                 </li>
 
-                <li className="nav__drawer_item">
+                <li className="nav__drawer-item">
                 <MdOutlineWorkOutline className="icon"/> <a href="#experiences">EXPERIENCES</a>
                 </li>
 
-                <li className="nav__drawer_item">
+                <li className="nav__drawer-item">
                   <MdMail className="icon"/> <a href="#contact">CONTACT</a>
                 </li>
               </ul>
@@ -55,22 +55,22 @@ const Navbar = () => {
         </>
       )}
 
-      <nav id="nav">
-        <div className="nav-burger-icon" onClick={openDrawerHandler}>
+      <nav className="nav">
+        <div className="nav__burger-icon" onClick={openDrawerHandler}>
           <RxHamburgerMenu  />
         </div>
-        <ul className="nav-items">
+        <ul className="nav__items">
           <a href="#about">
-            <li className="nav-item">A PROPOS</li>
+            <li className="nav__item">A PROPOS</li>
           </a>
           <a href="#realisations">
-            <li className="nav-item">RÉALISATIONS</li>
+            <li className="nav__item">RÉALISATIONS</li>
           </a>
           <a href="#experiences">
-            <li className="nav-item">EXPERIENCES</li>
+            <li className="nav__item">EXPERIENCES</li>
           </a>
           <a href="#contact">
-            <li className="nav-item">CONTACT</li>
+            <li className="nav__item">CONTACT</li>
           </a>
         </ul>
       </nav>

@@ -1,5 +1,5 @@
 // import useCtx from "../../hook/useCtx";
-import "./Input.css";
+import classes from "./Input.module.css";
 
 const Input = ({ placeholder, type, label, id, name }) => {
   // const context = useCtx();
@@ -18,7 +18,7 @@ const Input = ({ placeholder, type, label, id, name }) => {
   // // }, [context.formulaire]);
 
   return (
-    <div className="input">
+    <div className={classes.input}>
       <label htmlFor={id}>{label}</label>
       <input
         type={type}

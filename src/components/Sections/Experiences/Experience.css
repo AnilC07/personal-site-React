@@ -1,43 +1,33 @@
-#experiences .experience {
+.experiences .experience {
     margin-bottom: 4rem;
 }
 
-#experiences .experience .experience__header-container {
+.experiences .experience .experience__container {
     box-shadow: var(--btn-shadow);
     border-radius: var(--border-radius);
     position: relative;
     margin-bottom: 2rem;
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
 }
 
-#experiences .experience .experience__header-container .show {
+.experiences .experience .experience__container .show {
     text-align: center;
     padding-bottom: 1rem;
     cursor: pointer;
 }
 
-#experiences .experience .experience__header-container .show p {
+.experiences .experience .experience__container .show p {
     font-size: 1.3rem;
 }
 
-#experiences .experience .experience__header-container .show:hover {
+.experiences .experience .experience__container .show:hover {
     /* -webkit-animation: clickMe .3s infinite; */
     animation: clickMe .3s infinite;
 
 }
-
-/* @-webkit-keyframes clickMe {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-} */
 
 @keyframes clickMe {
     0% {
@@ -53,14 +43,14 @@
     }
 }
 
-#experiences .experience .header {
+.experiences .experience__container--header{
     display: flex;
     align-items: center;
     gap: 1.5rem;
     padding: 1rem;
 }
 
-#experiences .experience .informations {
+.experiences .experience .informations {
     width: 90%;
     display: flex;
     align-items: center;
@@ -68,55 +58,55 @@
     border-left: 2px solid black;
 }
 
-#experiences .experience .informations h3 {
+.experiences .experience .informations h3 {
     font-size: 2.3rem;
 }
 
-#experiences .experience .informations .date {
+.experiences .experience .informations .date {
     font-size: 1.8rem;
     padding-right: 1rem;
 }
 
 
-#experiences .experience .missions {
+.experiences .experience .missions {
     text-align: justify;
     margin-left: 5rem;
     padding-top: 2rem;
     padding-right: 6rem;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
-#experiences .experience .missions li {
+.experiences .experience .missions li {
     padding: 0.3rem 0;
 }
 
-#experiences .experience .missions p,
-#experiences .experience .missions li {
-    font-size: 1.8rem;
+.experiences .experience .missions p,
+.experiences .experience .missions li {
+    font-size: 1.4rem;
 }
 
-#experiences .experience .description {
+.experiences .experience .description {
     text-align: justify;
     padding-bottom: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
-#experiences .experience .list {
+.experiences .experience .list {
     text-align: justify;
     list-style: none;
 }
 
-#experiences .experience .list p {
-    font-size: 1.8rem;
+.experiences .experience .list p {
+    font-size: 1.4rem;
 }
 
-#experiences .experience .list .list-item {
+.experiences .experience .list .list-item {
     display: flex;
     align-items: center;
     padding-right: 6rem;
 }
 
-#experiences .experience .list .list-item:last-child {
+.experiences .experience .list .list-item:last-child {
     padding-bottom: 2rem;
 }
 
@@ -124,16 +114,16 @@
 
 /*Tablette*/
 @media screen and (min-width:426px) and (max-width:991px) {
-    #experiences .experience .informations h3 {
+    .experiences .experience .informations h3 {
         font-size: 2rem;
     }
 
-    #experiences .experience .missions p,
-    #experiences .experience .missions li {
+    .experiences .experience .missions p,
+    .experiences .experience .missions li {
         font-size: 1.3rem;
     }
 
-    #experiences .experience .informations .date {
+    .experiences .experience .informations .date {
         font-size: 1.4rem;
         padding-right: 1rem;
     }
@@ -142,20 +132,20 @@
 
 /*Mobile*/
 @media screen and (max-width:425px) {
-    #experiences .experience .header {
+    .experiences .experience__container--header {
         flex-direction: column;
         gap: .7rem;
     }
 
-    #experiences .experience .informations {
+    .experiences .experience .informations {
         border-left: none;
     }
 
-    #experiences .experience .informations h3 {
+    .experiences .experience .informations h3 {
         font-size: 1.4rem;
     }
 
-    #experiences .experience .informations .date {
+    .experiences .experience .informations .date {
         font-size: 1.4rem;
         padding-right: 1rem;
         position: absolute;
@@ -164,21 +154,21 @@
         padding: 0;
     }
 
-    #experiences .experience .missions {
+    .experiences .experience .missions {
         margin-left: 2rem;
         padding-right: 2rem;
     }
 
-    #experiences .experience .missions p,
-    #experiences .experience .missions li {
+    .experiences .experience .missions p,
+    .experiences .experience .missions li {
         font-size: 1.3rem;
     }
 
-    #experiences .experience .list .list-item {
+    .experiences .experience .list .list-item {
         padding-right: 0;
     }
 
-    #experiences .experience .description {
+    .experiences .experience .description {
         padding-right: 0;
     }
 

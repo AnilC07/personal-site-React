@@ -16,8 +16,8 @@ const Experience = ({
 }) => {
   return (
     <div className="experience" key={id}>
-      <div className="experience__header-container">
-        <div className="header">
+      <div className="experience__container">
+        <div className="experience__container--header">
           <div>
             <Logo logo={logo} company={company} />
           </div>

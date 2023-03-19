@@ -1,23 +1,25 @@
 #contact .msg {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     text-align: justify;
 }
 
 .contact-btn {
     display: flex;
     justify-content: center;
-    gap: 5.7rem;
+    gap: 20rem;
 }
 
 .contact-btn .button.mail,
 .contact-btn .button.commentaire {
-    margin-top: 2rem;
+    min-width: 25rem;
+    margin: 6rem;
     padding: 1.5rem 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--btn-shadow);
     background: transparent;
     cursor: pointer;
     transform: translateY(0);
+    justify-content: center;
 
     transition: var(--animation);
 }
@@ -36,6 +38,79 @@
 .contact-btn .button.mail:active,
 .contact-btn .button.commentaire:active {
     transform: translateY(3px);
+}
+
+@media screen and (max-width:1040px) {
+
+    .contact-btn {
+        /* margin: 3rem 0;
+        flex-direction: column;
+        align-items: center; */
+        gap: 3rem;
+    }
+
+/*     
+.contact-btn .button.mail,
+.contact-btn .button.commentaire {
+    margin: 0;
+
+    align-items: center;
+
+
+}
+
+.contact-btn .button.mail svg,
+.contact-btn .button.commentaire .icon {
+    font-size: 2.5rem;
+}
+
+.contact-btn .button.mail:hover,
+.contact-btn .button.commentaire:hover {
+    transform: scale(1.05);
+}
+
+
+.contact-btn .button.mail:active,
+.contact-btn .button.commentaire:active {
+    transform: translateY(3px);
+} */
+
+}
+
+
+@media screen and (max-width:835px) {
+    .contact-btn {
+         margin: 3rem 0;
+        flex-direction: column;
+        align-items: center; 
+        gap: 3rem;
+    }
+
+  
+.contact-btn .button.mail,
+.contact-btn .button.commentaire {
+    margin: 0;
+
+    align-items: center;
+
+
+}
+
+.contact-btn .button.mail svg,
+.contact-btn .button.commentaire .icon {
+    font-size: 2.5rem;
+}
+
+.contact-btn .button.mail:hover,
+.contact-btn .button.commentaire:hover {
+    transform: scale(1.05);
+}
+
+
+.contact-btn .button.mail:active,
+.contact-btn .button.commentaire:active {
+    transform: translateY(3px);
+} 
 }
 
 
@@ -128,14 +203,14 @@
 
 @media screen and (max-width:991px) {
 
-    .contact-btn {
+    /* .contact-btn {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0;
-    }
+    } */
 
-    .contact-btn .button.mail,
+    /* .contact-btn .button.mail,
     .contact-btn .button.commentaire {
         margin-top: 2rem;
         padding: 1.5rem 2rem;
@@ -151,8 +226,8 @@
 
     .contact-btn .button.mail svg,
     .contact-btn .button.commentaire .icon {
-        font-size: 1.8rem;
-    }
+        font-size: 2.5rem;
+    } */
 
 
     #commentaires .container {

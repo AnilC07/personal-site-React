@@ -1,12 +1,12 @@
 import React from "react";
 
-import "./UserIcon.css";
+import classes from "./UserIcon.module.css";
 
 const UserIcon = ({ type, id, name, value, label,getGender,classname }) => {
   console.log({ type, id, name, value, label });
   return (
-    <div className="radio-groups">
-      <div className="radio-group">
+    <div className={classes.radio_groups}>
+      <div className={classes.radio_group}>
         <input type={type} value={value} name={name} id={id} hidden />
         <label htmlFor={id} className={classname}>
           <img src={label} alt={`avatar ${value}`} onClick={()=>getGender(value)}/>

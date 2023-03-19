@@ -6,15 +6,13 @@ import SectionHeading from "../../SectionHeading";
 
 const About = () => {
   return (
-    <section id="about">
-      <div className="section-heading">
+    <section className="about">
         <SectionHeading>A propos de moi</SectionHeading>
-      </div>
-      <div className="presentation-container">
-        <div className="container-profil-img">
+      <div className="about__container">
+        <div className="about__container-img">
           <img src={"/images/maPhoto.jpg"} alt="" />
         </div>
-        <div className="presentation-text">
+        <div className="about__container-text">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
             nunc tempor neque semper vulputate. Vestibulum sed lorem viverra,

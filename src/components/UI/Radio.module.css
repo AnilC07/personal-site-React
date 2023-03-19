@@ -1,17 +1,17 @@
-.radio-groups{
+.radio_groups{
 display: flex;
 align-items: center;
 gap: 5rem;
 }
 
-.radio-group{
+.radio_group{
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
 @media screen and (max-width:669px){
-.radio-groups{
+.radio_groups{
     display: flex;
 }
 }

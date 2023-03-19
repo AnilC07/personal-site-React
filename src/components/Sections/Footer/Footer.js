@@ -1,14 +1,13 @@
-import React from 'react'
+import React from "react";
+
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="bottom-container">
-  <a className="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-  <a className="footer-link" href="https://twitter.com/">Twitter</a>
-  <a className="footer-link" href="https://www.appbrewery.co/">Website</a>
-  <p>© Name Surname.</p>
-</div>
-  )
-}
+    <div id="footer">
+        <p className="footer__text"> &copy; {new Date().getFullYear()} Anil CELIK.</p>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;

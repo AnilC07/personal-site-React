@@ -3,11 +3,11 @@ import Navbar from '../Navbar/Navbar'
 import './Header.css'
 
 const Header = () => {
-  return (<div id='header' className='background-wrap'>
+  return (<div className='header'>
     <Navbar />
-    <div className="header-container">
+    <div className="header__container">
         <h1>Anil CELIK</h1>
-        <h2>Developpeur Front-end JavaScript</h2>
+        <h3>Developpeur Front-end JavaScript</h3>
       </div>
     </div>
   )

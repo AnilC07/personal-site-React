@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import "./TextArea.css";
+import classes from "./TextArea.module.css";
 
 const TextArea = ({ id, label, placeholder, name }) => {
   const [numChars, setNumChars] = useState(400);
@@ -16,9 +16,9 @@ const TextArea = ({ id, label, placeholder, name }) => {
   }, [numChars]);
 
   return (
-    <div className="message">
+    <div className={classes.message}>
       <label htmlFor={id}>{label}</label>
-      <div className="text-area">
+      <div>
         <textarea
           id={id}
           placeholder={placeholder}
@@ -28,7 +28,7 @@ const TextArea = ({ id, label, placeholder, name }) => {
           onChange={limitNumOfChars}
           maxLength="400"
         />
-        <p className="decompte">il vous reste {numChars} caracteres</p>
+        <p className={classes.decompte}>il vous reste {numChars} caracteres</p>
       </div>
     </div>
   );

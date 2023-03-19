@@ -1,4 +1,10 @@
-#form .input {}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
 #form label {
     font-size: 1.8rem;
@@ -52,7 +58,8 @@
 
 #form .recruteur {
     display: flex;
-    gap: 11.5rem;
+width: 100%;
+justify-content: space-between;
     margin-bottom: 1rem;
 }
 

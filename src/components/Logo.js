@@ -1,10 +1,10 @@
-import React from "react";
 
-import "./Logo.css";
+
+import classes from "./Logo.module.css";
 
 const Logo = ({ logo, company }) => {
   return (
-    <div className="logo">
+    <div className={classes.logo}>
       <img src={logo} alt={`logo de ${company}`} />
     </div>
   );

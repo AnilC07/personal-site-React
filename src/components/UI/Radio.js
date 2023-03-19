@@ -1,11 +1,11 @@
 import React from "react";
 
-import "./Radio.css";
+import classes from "./Radio.module.css";
 
 const Radio = ({ label, value, name, setCategoryOfVisitor }) => {
   return (
 
-      <div className="radio-group">
+      <div className={classes.radio_group}>
         <input
         id={value}
           type="radio"

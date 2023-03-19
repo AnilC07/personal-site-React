@@ -25,15 +25,6 @@
     gap: 3rem;
 }
 
-#realisations .projects-container .filter .filter-btn button {
-    width: 16rem;
-    box-shadow: var(--btn-shadow);
-}
-
-#realisations .projects-container .filter .filter-btn button:hover {
-    border: none;
-}
-
 #realisations .projects-container .filter .select select {
     appearance: unset;
     border: none;
@@ -263,6 +254,5 @@
         overflow-x: scroll;
         overflow-y: hidden;
         padding-top: 4rem;
-
     }
 }

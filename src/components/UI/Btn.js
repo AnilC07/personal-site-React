@@ -6,7 +6,7 @@ import {BiMailSend, BiCommentAdd} from 'react-icons/bi'
 
 import "./Btn.css";
 
-const Btn = ({ title, bgColor, textColor,classname, onClickHandler, icon }) => {
+const Btn = ({ title, bgColor, textColor,classname, onClickHandler }) => {
 
   const styles = {
     backgroundColor: `${bgColor}`,

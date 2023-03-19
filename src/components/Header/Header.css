@@ -1,58 +1,43 @@
 /*Desktop*/
-#header {
-    background-image: linear-gradient(to bottom, #000000 -28%, rgba(0, 0, 0, 0.3)), url('../.././../public/images/tiger.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
+.header {
+    background-image: linear-gradient(to bottom, #000000 -28%, rgb(255, 255, 255));
 }
 
-#header .header-container {
-    padding: 22rem 0;
-    position: relative;
-    color: #fefefefe;
-    text-align: center;
+.header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    color: #c69963;
+
+    padding: 15rem 0;
 }
 
-.header-container h1 {
-    display: inline-block;
-    font-size: 8rem;
+.header__container h1 {
+    font-size: 5rem;
 }
 
-#header .header-container h2 {
-    font-size: 4rem;
+.header__container h3 {
+    font-size: 2.5rem;
 }
 
 /* Media query */
-
 /*Tablette*/
-@media screen and (min-width:426px) and (max-width:991px) {
-    #header .header-container {
-        padding: 20rem 0;
-        position: relative;
-        color: #fefefefe;
-        text-align: center;
-    }
+@media screen and (max-width:991px) {
 
-    #header .header-container h2 {
-        font-size: 4rem;
-    }
 }
 
 /*Mobile*/
 @media screen and (max-width:425px) {
-    #header .header-container {
-        padding: 25rem 0;
-        position: relative;
-        color: #fefefefe;
+    .header__container{
         text-align: center;
     }
 
-    .header-container h1 {
+    .header__container h1 {
         font-size: 5rem;
-        padding: 0 2rem;
-}
+    }
 
-    #header .header-container h2 {
-        font-size: 3rem;
-        padding: 0 2rem;
+    .header__container h3 {
+        font-size: 2.5rem;
     }
 }
