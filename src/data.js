@@ -8,63 +8,68 @@ export const competences = [
     competence: "Bootstrap",
   },
   {
-    id: 3,
+    id:3,
+    competence:"Sass"
+  },
+  {
+    id: 4,
     competence: "NodeJS",
   },
 
   {
-    id: 4,
+    id: 5,
     competence: "ReactJS",
   },
   {
-    id: 5,
+    id: 6,
     competence: "NextJS",
   },
   {
-    id: 6,
+    id: 7,
     competence: "TypeScript",
   },
+
 ];
 
 export const projets = [
   {
     id: 1,
-    image: "/images/audi.jpg",
-    titre: "Lorem Ipsum 1",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    lien: "www.lorem.com",
-    tags: [ "NodeJS"],
+    image: "/images/projets/dictionnary.png",
+    titre: "Dico (US)",
+    desc: "Application Dico realiser avec la librairie React et l'API \"dictionaryapi\"  qui donne une liste de definition pour tous les mots (anglais) ainsi que leur synonymes. Si disponible, on a également accès à la prononciation du mot. Ce projet est un challenge du site frontendmentor.io",
+    lien: "https://anils-dictionnary-app.netlify.app",
+    tags: [ "ReactJS"]
   },
   {
     id: 2,
-    image: "/images/audi.jpg",
-    titre: "Lorem Ipsum 2",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    lien: "www.lorem.com",
-    tags: ["ReactJS"],
+    image: "/images/projets/composant-resultat.png",
+    titre: "Résumé de résultats",
+    desc: "Composant HTML/CSS qui résume les résultats obtenue à un test. Le composant n'utilise pas de données dynamique car ma volonté ici etait de m'exercer au CSS avec Sass. Ce projet est un challenge du site frontendmentor.io.",
+    lien: "https://anils-result-resume-component.netlify.app/",
+    tags: ["HTML / CSS", "Sass"],
   },
   {
     id: 3,
-    image: "/images/audi.jpg",
-    titre: "Lorem Ipsum 3",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    lien: "www.lorem.com",
-    tags: ["Bootstrap"],
+    image: "/images/projets/Natours.png",
+    titre: "Natours",
+    desc: "Le projet \"Natours\" à pour objectif la pratique du CSS (plus particulierement des colonnes de BootStrap) et du preprocesseur Sass. Il fait parti de la formation \"Advanced CSS and Sass\" dispenser pas Jonas Schmeldtmann sur Udemy.",
+    lien: "https://anilcelik-natours.netlify.app/",
+    tags: ["HTML / CSS", "Bootstrap", "Sass"],
   },
   {
     id: 4,
-    image: "/images/audi.jpg",
-    titre: "Lorem Ipsum 4",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    lien: "www.lorem.com",
-    tags: ["NextJS"],
+    image: "/images/projets/Trillo.png",
+    titre: "Trillo",
+    desc: "Le projet \"Trillo\" à pour objectif la pratique du CSS et plus particulierement de Flexbox et du preprocesseur Sass. Il fait parti de la formation \"Advanced CSS and Sass\" dispenser pas Jonas Schmeldtmann sur Udemy.",
+    lien: "https://anilcelik-trillo.netlify.app/",
+    tags: ["HTML / CSS", "Sass"],
   },
   {
     id: 5,
-    image: "/images/audi.jpg",
-    titre: "Lorem Ipsum 5",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    lien: "www.lorem.com",
+    image: "/images/projets/Nexter.png",
+    titre: "Nexter",
+    desc: "Le projet \"Nexter\" à pour objectif la pratique du CSS et plus particulierement du système de \"grid\" et du preprocesseur Sass. Il fait parti de la formation \"Advanced CSS and Sass\" dispenser pas Jonas Schmeldtmann sur Udemy.",
+    lien: "https://anilcelik-nexter.netlify.app",
     tags: ["HTML/CSS", "Sass"],
   },
   {
